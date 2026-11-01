@@ -1,0 +1,397 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 03 · BASELINE
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Один фрагмент не покрывал сложный сценарий и не отсекал лишний ответ
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '04'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: score
+  elementType: text
+  bounds:
+  - 56
+  - 151
+  - 210
+  - 66
+  content:
+    text: 5 / 10
+    fontSize: 48
+    color: $orange
+    bold: true
+- elementId: scorelab
+  elementType: text
+  bounds:
+  - 58
+  - 216
+  - 230
+  - 24
+  content:
+    text: корректных ответов baseline
+    fontSize: 14
+    color: $muted
+- elementId: q0
+  elementType: text
+  bounds:
+  - 58
+  - 272
+  - 45
+  - 22
+  content:
+    text: Q5
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: bar0
+  elementType: shape
+  bounds:
+  - 110
+  - 276
+  - 128
+  - 9
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#E7D8CE'
+- elementId: r0
+  elementType: text
+  bounds:
+  - 254
+  - 272
+  - 280
+  - 24
+  content:
+    text: допуск + действия
+    fontSize: 14
+    color: $ink
+- elementId: q1
+  elementType: text
+  bounds:
+  - 58
+  - 309
+  - 45
+  - 22
+  content:
+    text: Q6
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: bar1
+  elementType: shape
+  bounds:
+  - 110
+  - 313
+  - 128
+  - 9
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#E7D8CE'
+- elementId: r1
+  elementType: text
+  bounds:
+  - 254
+  - 309
+  - 280
+  - 24
+  content:
+    text: нет оговорки
+    fontSize: 14
+    color: $ink
+- elementId: q2
+  elementType: text
+  bounds:
+  - 58
+  - 346
+  - 45
+  - 22
+  content:
+    text: Q7
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: bar2
+  elementType: shape
+  bounds:
+  - 110
+  - 350
+  - 128
+  - 9
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#E7D8CE'
+- elementId: r2
+  elementType: text
+  bounds:
+  - 254
+  - 346
+  - 280
+  - 24
+  content:
+    text: ответ вместо отказа
+    fontSize: 14
+    color: $ink
+- elementId: q3
+  elementType: text
+  bounds:
+  - 58
+  - 383
+  - 45
+  - 22
+  content:
+    text: Q9
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: bar3
+  elementType: shape
+  bounds:
+  - 110
+  - 387
+  - 128
+  - 9
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#E7D8CE'
+- elementId: r3
+  elementType: text
+  bounds:
+  - 254
+  - 383
+  - 280
+  - 24
+  content:
+    text: действия + сроки
+    fontSize: 14
+    color: $ink
+- elementId: q4
+  elementType: text
+  bounds:
+  - 58
+  - 420
+  - 45
+  - 22
+  content:
+    text: Q10
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: bar4
+  elementType: shape
+  bounds:
+  - 110
+  - 424
+  - 128
+  - 9
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#E7D8CE'
+- elementId: r4
+  elementType: text
+  bounds:
+  - 254
+  - 420
+  - 280
+  - 24
+  content:
+    text: общее правило без оговорки
+    fontSize: 14
+    color: $ink
+- elementId: divider
+  elementType: line
+  bounds:
+  - 566
+  - 150
+  - 1
+  - 304
+  viewBox:
+  - 1
+  - 304
+  points: 0,0 1,304
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: causes
+  elementType: text
+  bounds:
+  - 614
+  - 151
+  - 290
+  - 28
+  content:
+    text: Причины
+    fontSize: 21
+    color: $ink
+    bold: true
+- elementId: cause0
+  elementType: text
+  bounds:
+  - 614
+  - 204
+  - 290
+  - 44
+  content:
+    text: Один BM25-запрос
+    fontSize: 17
+    color: $ink
+    lineHeight: 1.25
+- elementId: cl0
+  elementType: line
+  bounds:
+  - 614
+  - 248
+  - 250
+  - 1
+  viewBox:
+  - 250
+  - 1
+  points: 0,0 250,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: cause1
+  elementType: text
+  bounds:
+  - 614
+  - 262
+  - 290
+  - 44
+  content:
+    text: Один лучший чанк в ответе
+    fontSize: 17
+    color: $ink
+    lineHeight: 1.25
+- elementId: cl1
+  elementType: line
+  bounds:
+  - 614
+  - 306
+  - 250
+  - 1
+  viewBox:
+  - 250
+  - 1
+  points: 0,0 250,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: cause2
+  elementType: text
+  bounds:
+  - 614
+  - 320
+  - 290
+  - 44
+  content:
+    text: Нет проверки объекта вопроса
+    fontSize: 17
+    color: $ink
+    lineHeight: 1.25
+- elementId: cl2
+  elementType: line
+  bounds:
+  - 614
+  - 364
+  - 250
+  - 1
+  viewBox:
+  - 250
+  - 1
+  points: 0,0 250,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: cause3
+  elementType: text
+  bounds:
+  - 614
+  - 378
+  - 290
+  - 44
+  content:
+    text: Нет различения прямого и общего правила
+    fontSize: 17
+    color: $ink
+    lineHeight: 1.25
+- elementId: cl3
+  elementType: line
+  bounds:
+  - 614
+  - 422
+  - 250
+  - 1
+  viewBox:
+  - 250
+  - 1
+  points: 0,0 250,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line

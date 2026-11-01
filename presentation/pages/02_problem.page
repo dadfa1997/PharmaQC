@@ -1,0 +1,313 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 01 · ЗАДАЧА
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Поиск правила должен заканчиваться проверяемым ответом
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '02'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: lead
+  elementType: text
+  bounds:
+  - 56
+  - 143
+  - 460
+  - 58
+  content:
+    text: Пользователь — специалист ОКК. Ему важны не только слова ответа, но и применимый пункт регламента.
+    fontSize: 18
+    color: $ink
+    lineHeight: 1.35
+- elementId: n0
+  elementType: text
+  bounds:
+  - 56
+  - 224
+  - 42
+  - 28
+  content:
+    text: '01'
+    fontSize: 16
+    color: $orange
+    bold: true
+- elementId: t0
+  elementType: text
+  bounds:
+  - 112
+  - 224
+  - 390
+  - 26
+  content:
+    text: Задать вопрос
+    fontSize: 19
+    color: $ink
+    bold: true
+- elementId: s0
+  elementType: text
+  bounds:
+  - 112
+  - 255
+  - 390
+  - 24
+  content:
+    text: на русском языке через HTTP
+    style: $small
+    fontSize: 14
+- elementId: stepline0
+  elementType: line
+  bounds:
+  - 74
+  - 256
+  - 1
+  - 48
+  viewBox:
+  - 1
+  - 48
+  points: 0,0 1,48
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n1
+  elementType: text
+  bounds:
+  - 56
+  - 304
+  - 42
+  - 28
+  content:
+    text: '02'
+    fontSize: 16
+    color: $orange
+    bold: true
+- elementId: t1
+  elementType: text
+  bounds:
+  - 112
+  - 304
+  - 390
+  - 26
+  content:
+    text: Найти контекст
+    fontSize: 19
+    color: $ink
+    bold: true
+- elementId: s1
+  elementType: text
+  bounds:
+  - 112
+  - 335
+  - 390
+  - 24
+  content:
+    text: в пяти внутренних регламентах
+    style: $small
+    fontSize: 14
+- elementId: stepline1
+  elementType: line
+  bounds:
+  - 74
+  - 336
+  - 1
+  - 48
+  viewBox:
+  - 1
+  - 48
+  points: 0,0 1,48
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n2
+  elementType: text
+  bounds:
+  - 56
+  - 384
+  - 42
+  - 28
+  content:
+    text: '03'
+    fontSize: 16
+    color: $orange
+    bold: true
+- elementId: t2
+  elementType: text
+  bounds:
+  - 112
+  - 384
+  - 390
+  - 26
+  content:
+    text: Проверить источник
+    fontSize: 19
+    color: $ink
+    bold: true
+- elementId: s2
+  elementType: text
+  bounds:
+  - 112
+  - 415
+  - 390
+  - 24
+  content:
+    text: или получить контролируемый отказ
+    style: $small
+    fontSize: 14
+- elementId: divider
+  elementType: line
+  bounds:
+  - 574
+  - 150
+  - 1
+  - 310
+  viewBox:
+  - 1
+  - 310
+  points: 0,0 1,310
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: value0
+  elementType: text
+  bounds:
+  - 626
+  - 154
+  - 110
+  - 48
+  content:
+    text: '5'
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: lab0
+  elementType: text
+  bounds:
+  - 746
+  - 164
+  - 160
+  - 44
+  content:
+    text: учебных регламентов
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.25
+- elementId: value1
+  elementType: text
+  bounds:
+  - 626
+  - 248
+  - 110
+  - 48
+  content:
+    text: '4'
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: lab1
+  elementType: text
+  bounds:
+  - 746
+  - 258
+  - 160
+  - 44
+  content:
+    text: типа вопросов
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.25
+- elementId: value2
+  elementType: text
+  bounds:
+  - 626
+  - 342
+  - 110
+  - 48
+  content:
+    text: '2'
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: lab2
+  elementType: text
+  bounds:
+  - 746
+  - 352
+  - 160
+  - 44
+  content:
+    text: независимых движка
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.25
+- elementId: boundary
+  elementType: text
+  bounds:
+  - 626
+  - 438
+  - 278
+  - 40
+  content:
+    text: 'Граница: сервис не заменяет решение специалиста.'
+    fontSize: 13
+    color: $muted
+    lineHeight: 1.3

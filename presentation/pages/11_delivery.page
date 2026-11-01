@@ -1,0 +1,200 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 10 · ПРОВЕРКА И ЗАПУСК
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Сервис проверен локально через HTTP; Docker подготовлен отдельно
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '11'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: code
+  elementType: shape
+  bounds:
+  - 56
+  - 145
+  - 520
+  - 196
+  shapeName: rect
+  fill:
+    type: solid
+    color: $dark
+- elementId: codet
+  elementType: text
+  bounds:
+  - 78
+  - 166
+  - 476
+  - 156
+  content:
+    text: 'uvicorn app.main:app --port 8000
+
+      python scripts/smoke_test.py
+
+      pytest -q -p no:cacheprovider
+
+      python scripts/evaluate.py --preset improved --runs 3'
+    fontSize: 16
+    color: '#E4ECE7'
+    lineHeight: 1.55
+- elementId: tests
+  elementType: text
+  bounds:
+  - 628
+  - 150
+  - 120
+  - 48
+  content:
+    text: '66'
+    fontSize: 40
+    color: $green
+    bold: true
+- elementId: testsl
+  elementType: text
+  bounds:
+  - 754
+  - 163
+  - 150
+  - 24
+  content:
+    text: автотестов PASS
+    fontSize: 15
+    color: $ink
+- elementId: http
+  elementType: text
+  bounds:
+  - 628
+  - 228
+  - 120
+  - 48
+  content:
+    text: 4 / 4
+    fontSize: 36
+    color: $green
+    bold: true
+- elementId: httpl
+  elementType: text
+  bounds:
+  - 754
+  - 239
+  - 150
+  - 40
+  content:
+    text: 'HTTP-сценария
+
+      PASS'
+    fontSize: 15
+    color: $ink
+    lineHeight: 1.25
+- elementId: sep
+  elementType: line
+  bounds:
+  - 56
+  - 379
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: verified
+  elementType: text
+  bounds:
+  - 56
+  - 401
+  - 90
+  - 22
+  content:
+    text: ПОДТВЕРЖДЕНО
+    style: $label
+- elementId: verifiedt
+  elementType: text
+  bounds:
+  - 180
+  - 399
+  - 724
+  - 40
+  content:
+    text: Uvicorn, health, штатный ответ, отказ и HTTP 422; лог без текста вопросов.
+    fontSize: 16
+    color: $ink
+- elementId: not
+  elementType: text
+  bounds:
+  - 56
+  - 457
+  - 90
+  - 22
+  content:
+    text: НЕ ЗАЯВЛЯЕМ
+    style: $label
+- elementId: nott
+  elementType: text
+  bounds:
+  - 180
+  - 455
+  - 724
+  - 40
+  content:
+    text: 'Сборку Docker и реальные Groq-метрики: в среде нет daemon и API-ключа.'
+    fontSize: 16
+    color: $muted

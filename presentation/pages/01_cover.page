@@ -1,0 +1,187 @@
+pageType: content
+background:
+  type: solid
+  color: $dark
+elements:
+- elementId: kicker
+  elementType: text
+  bounds:
+  - 58
+  - 46
+  - 500
+  - 24
+  content:
+    text: RAG · FASTAPI · КОНТРОЛЬ КАЧЕСТВА
+    fontSize: 13
+    color: '#A8C7BA'
+    bold: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 58
+  - 116
+  - 520
+  - 132
+  content:
+    text: PharmaQC
+    fontSize: 58
+    color: '#FBFCFA'
+    bold: true
+- elementId: subtitle
+  elementType: text
+  bounds:
+  - 60
+  - 250
+  - 500
+  - 92
+  content:
+    text: 'Ассистент по внутренним регламентам
+
+      фармацевтического производства'
+    fontSize: 24
+    color: '#E4ECE7'
+    lineHeight: 1.25
+- elementId: accent
+  elementType: shape
+  bounds:
+  - 60
+  - 366
+  - 88
+  - 5
+  shapeName: rect
+  fill:
+    type: solid
+    color: $orange
+- elementId: meta
+  elementType: text
+  bounds:
+  - 60
+  - 398
+  - 480
+  - 60
+  content:
+    text: 'Дипломный проект · траектория RAG
+
+      Версия 3.0.0 · ноябрь 2026'
+    fontSize: 15
+    color: '#A8C7BA'
+    lineHeight: 1.4
+- elementId: node0
+  elementType: shape
+  bounds:
+  - 650
+  - 120
+  - 238
+  - 62
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#183E34'
+  border:
+    style: solid
+    width: 1
+    color: '#557A6C'
+- elementId: nodet0
+  elementType: text
+  bounds:
+  - 670
+  - 137
+  - 200
+  - 28
+  content:
+    text: 5 регламентов
+    fontSize: 18
+    color: '#FBFCFA'
+    bold: false
+- elementId: arr0
+  elementType: line
+  bounds:
+  - 769
+  - 184
+  - 1
+  - 34
+  viewBox:
+  - 1
+  - 34
+  points: 0,0 1,34
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: '#D87543'
+  arrow:
+  - null
+  - arrow
+- elementId: node1
+  elementType: shape
+  bounds:
+  - 650
+  - 220
+  - 238
+  - 62
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#183E34'
+  border:
+    style: solid
+    width: 1
+    color: '#557A6C'
+- elementId: nodet1
+  elementType: text
+  bounds:
+  - 670
+  - 237
+  - 200
+  - 28
+  content:
+    text: 61 фрагмент
+    fontSize: 18
+    color: '#FBFCFA'
+    bold: false
+- elementId: arr1
+  elementType: line
+  bounds:
+  - 769
+  - 284
+  - 1
+  - 34
+  viewBox:
+  - 1
+  - 34
+  points: 0,0 1,34
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: '#D87543'
+  arrow:
+  - null
+  - arrow
+- elementId: node2
+  elementType: shape
+  bounds:
+  - 650
+  - 320
+  - 238
+  - 62
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#183E34'
+  border:
+    style: solid
+    width: 1
+    color: '#557A6C'
+- elementId: nodet2
+  elementType: text
+  bounds:
+  - 670
+  - 337
+  - 200
+  - 28
+  content:
+    text: Ответ + источники
+    fontSize: 18
+    color: '#FBFCFA'
+    bold: true

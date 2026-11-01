@@ -1,0 +1,200 @@
+Windows PowerShell 5.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+PS C:\Users\Иван\Desktop> docker version
+Client:
+ Version:           29.9.2
+ API version:       1.56
+ Go version:        go1.26.10
+ Git commit:        a82e528
+ Built:             Tue Oct 20 19:44:07 2026
+ OS/Arch:           windows/amd64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.97.0 (244584)
+ Engine:
+  Version:          29.9.2
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.10
+  Git commit:       0367cbe
+  Built:            Tue Oct 20 18:45:02 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.4.2
+  GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc:
+  Version:          1.5.2
+  GitCommit:        v1.5.2-0-g29dd3dc2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+PS C:\Users\Иван\Desktop> cd "$HOME\Desktop\PharmaQC"
+PS C:\Users\Иван\Desktop\PharmaQC> docker version
+Client:
+ Version:           29.9.2
+ API version:       1.56
+ Go version:        go1.26.10
+ Git commit:        a82e528
+ Built:             Tue Oct 20 19:44:07 2026
+ OS/Arch:           windows/amd64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.97.0 (244584)
+ Engine:
+  Version:          29.9.2
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.10
+  Git commit:       0367cbe
+  Built:            Tue Oct 20 18:45:02 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.4.2
+  GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc:
+  Version:          1.5.2
+  GitCommit:        v1.5.2-0-g29dd3dc2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+PS C:\Users\Иван\Desktop\PharmaQC> docker compose up --build -d
+[+] Building 552.9s (14/14) FINISHED
+ => [internal] load local bake definitions                                                                         0.0s
+ => => reading from stdin 555B                                                                                     0.0s
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 873B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/python:3.11-slim                                                5.7s
+ => [auth] library/python:pull token for registry-1.docker.io                                                      0.0s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 471B                                                                                  0.0s
+ => [1/6] FROM docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ce  6.2s
+ => => resolve docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ce  0.0s
+ => => sha256:361db81715472ecba5e656c314c299bd945309020483159596a8d123c2b1d580 251B / 251B                         0.4s
+ => => sha256:24ff04c921070df4f4dc987278926d5dabde59d57b55ae3665439331f79af932 14.46MB / 14.46MB                   1.9s
+ => => sha256:ee5aaeba9945927662bea2702989dfd74d9273796415b896363e6a9c44d9a8ce 1.29MB / 1.29MB                     1.8s
+ => => sha256:6fc242d221a673263eabd14a9ad9584d3177c96e5cb504c891497338e2f912f5 29.86MB / 29.86MB                   4.2s
+ => => extracting sha256:6fc242d221a673263eabd14a9ad9584d3177c96e5cb504c891497338e2f912f5                          0.9s
+ => => extracting sha256:ee5aaeba9945927662bea2702989dfd74d9273796415b896363e6a9c44d9a8ce                          0.2s
+ => => extracting sha256:24ff04c921070df4f4dc987278926d5dabde59d57b55ae3665439331f79af932                          0.7s
+ => => extracting sha256:361db81715472ecba5e656c314c299bd945309020483159596a8d123c2b1d580                          0.0s
+ => [internal] load build context                                                                                  0.2s
+ => => transferring context: 726.75kB                                                                              0.2s
+ => [2/6] WORKDIR /app                                                                                             0.2s
+ => [3/6] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/  7.2s
+ => [4/6] COPY requirements.txt .                                                                                  0.1s
+ => [5/6] RUN pip install --no-cache-dir -r requirements.txt                                                     356.6s
+ => [6/6] COPY . .                                                                                                 0.5s
+ => exporting to image                                                                                           175.7s
+ => => exporting layers                                                                                          142.0s
+ => => exporting manifest sha256:7e7a759d5ad783f483eecb5c6179a25500147fd01a9036817dc797b258ff0cda                  0.0s
+ => => exporting config sha256:22451c875828ab2723f46de8a82e305d8de25696b55617c490e5f42bdd96c961                    0.0s
+ => => exporting attestation manifest sha256:4a785fbff3b5bfbb32d45f747a6ff74e6789631d5dd42abd0dac9d13ab12f3f7      0.0s
+ => => exporting manifest list sha256:65e340bce520d7f69c1383d09b4a62ab88ea4289fe99bb815116532077af49a6             0.0s
+ => => naming to docker.io/library/pharmaqc-pharmaqc-api:latest                                                    0.0s
+ => => unpacking to docker.io/library/pharmaqc-pharmaqc-api:latest                                                33.5s
+ => resolving provenance for metadata file                                                                         0.0s
+[+] up 3/3
+ ✔ Image pharmaqc-pharmaqc-api Built                                                                              555.3s
+ ✔ Network pharmaqc_default    Created                                                                              0.0s
+ ✔ Container pharmaqc-api      Started                                                                              0.6s
+PS C:\Users\Иван\Desktop\PharmaQC> docker compose ps
+NAME           IMAGE                   COMMAND                  SERVICE        CREATED         STATUS                   PORTS
+pharmaqc-api   pharmaqc-pharmaqc-api   "uvicorn app.main:ap…"   pharmaqc-api   2 minutes ago   Up 2 minutes (healthy)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+PS C:\Users\Иван\Desktop\PharmaQC> curl.exe http://127.0.0.1:8000/health
+{"status":"ok","service":"PharmaQC RAG API","version":"3.0.0","ready":true}
+PS C:\Users\Иван\Desktop\PharmaQC> .\.venv\Scripts\Activate.ps1
+(.venv) PS C:\Users\Иван\Desktop\PharmaQC> python scripts/smoke_test.py
+PASS health     HTTP 200
+PASS normal     HTTP 200
+PASS no_answer  HTTP 200
+PASS validation HTTP 422
+Результат: data\eval\http_smoke_results.json
+(.venv) PS C:\Users\Иван\Desktop\PharmaQC> pytest -p no:cacheprovider
+..................................................................                                               [100%]
+66 passed in 1.19s
+(.venv) PS C:\Users\Иван\Desktop\PharmaQC> python scripts/evaluate.py --preset baseline --runs 3 --pause 0
+
+=== baseline: прогон 1/3 ===
+  OK  Q1  exact           0 мс  факты найдены
+  OK  Q2  exact           0 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  ERR Q5  multi_hop       0 мс  нет фактов: [['2%'], ['расследован', 'изолир', 'изоляц']]
+  ERR Q6  partial         0 мс  нет оговорки о том, что есть только общее правило
+  ERR Q7  no_answer       0 мс  ответил, хотя в документах ответа нет
+  OK  Q8  exact           0 мс  факты найдены
+  ERR Q9  multi_hop       0 мс  нет фактов: [['изолир'], ['24'], ['30']]
+  ERR Q10 partial         0 мс  нет оговорки о том, что есть только общее правило
+   {'questions': 10, 'correct': 5, 'accuracy': 0.5, 'hit_at_k': 0.889, 'correct_refusals_on_no_answer': '0/1', 'hallucinations': 3, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.1, 'p95_latency_ms': 0.2}
+
+=== baseline: прогон 2/3 ===
+  OK  Q1  exact           0 мс  факты найдены
+  OK  Q2  exact           0 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  ERR Q5  multi_hop       0 мс  нет фактов: [['2%'], ['расследован', 'изолир', 'изоляц']]
+  ERR Q6  partial         0 мс  нет оговорки о том, что есть только общее правило
+  ERR Q7  no_answer       0 мс  ответил, хотя в документах ответа нет
+  OK  Q8  exact           0 мс  факты найдены
+  ERR Q9  multi_hop       0 мс  нет фактов: [['изолир'], ['24'], ['30']]
+  ERR Q10 partial         0 мс  нет оговорки о том, что есть только общее правило
+   {'questions': 10, 'correct': 5, 'accuracy': 0.5, 'hit_at_k': 0.889, 'correct_refusals_on_no_answer': '0/1', 'hallucinations': 3, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.2, 'p95_latency_ms': 0.3}
+
+=== baseline: прогон 3/3 ===
+  OK  Q1  exact           0 мс  факты найдены
+  OK  Q2  exact           0 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  ERR Q5  multi_hop       0 мс  нет фактов: [['2%'], ['расследован', 'изолир', 'изоляц']]
+  ERR Q6  partial         0 мс  нет оговорки о том, что есть только общее правило
+  ERR Q7  no_answer       0 мс  ответил, хотя в документах ответа нет
+  OK  Q8  exact           0 мс  факты найдены
+  ERR Q9  multi_hop       0 мс  нет фактов: [['изолир'], ['24'], ['30']]
+  ERR Q10 partial         0 мс  нет оговорки о том, что есть только общее правило
+   {'questions': 10, 'correct': 5, 'accuracy': 0.5, 'hit_at_k': 0.889, 'correct_refusals_on_no_answer': '0/1', 'hallucinations': 3, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.1, 'p95_latency_ms': 0.2}
+
+Итог: accuracy mean=0.5 (min 0.5, max 0.5), цели НЕ достигнуты. Сводка: data\eval\summary_baseline_20261101_201240.json
+(.venv) PS C:\Users\Иван\Desktop\PharmaQC> python scripts/evaluate.py --preset improved --runs 3 --pause 0
+
+=== improved: прогон 1/3 ===
+  OK  Q1  exact           1 мс  факты найдены
+  OK  Q2  exact           2 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  OK  Q5  multi_hop       1 мс  факты найдены
+  OK  Q6  partial         0 мс  ответ с оговоркой
+  OK  Q7  no_answer       0 мс  верный отказ
+  OK  Q8  exact           0 мс  факты найдены
+  OK  Q9  multi_hop       1 мс  факты найдены
+  OK  Q10 partial         0 мс  ответ с оговоркой
+   {'questions': 10, 'correct': 10, 'accuracy': 1.0, 'hit_at_k': 1.0, 'correct_refusals_on_no_answer': '1/1', 'hallucinations': 0, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.5, 'p95_latency_ms': 1.7}
+
+=== improved: прогон 2/3 ===
+  OK  Q1  exact           0 мс  факты найдены
+  OK  Q2  exact           0 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  OK  Q5  multi_hop       1 мс  факты найдены
+  OK  Q6  partial         0 мс  ответ с оговоркой
+  OK  Q7  no_answer       0 мс  верный отказ
+  OK  Q8  exact           0 мс  факты найдены
+  OK  Q9  multi_hop       1 мс  факты найдены
+  OK  Q10 partial         0 мс  ответ с оговоркой
+   {'questions': 10, 'correct': 10, 'accuracy': 1.0, 'hit_at_k': 1.0, 'correct_refusals_on_no_answer': '1/1', 'hallucinations': 0, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.3, 'p95_latency_ms': 0.7}
+
+=== improved: прогон 3/3 ===
+  OK  Q1  exact           0 мс  факты найдены
+  OK  Q2  exact           0 мс  факты найдены
+  OK  Q3  exact           0 мс  факты найдены
+  OK  Q4  exact           0 мс  факты найдены
+  OK  Q5  multi_hop       1 мс  факты найдены
+  OK  Q6  partial         0 мс  ответ с оговоркой
+  OK  Q7  no_answer       0 мс  верный отказ
+  OK  Q8  exact           0 мс  факты найдены
+  OK  Q9  multi_hop       1 мс  факты найдены
+  OK  Q10 partial         0 мс  ответ с оговоркой
+   {'questions': 10, 'correct': 10, 'accuracy': 1.0, 'hit_at_k': 1.0, 'correct_refusals_on_no_answer': '1/1', 'hallucinations': 0, 'false_refusals': 0, 'cautious_refusals': 0, 'llm_errors': 0, 'avg_latency_ms': 0.3, 'p95_latency_ms': 0.8}
+
+Итог: accuracy mean=1.0 (min 1.0, max 1.0), цели достигнуты. Сводка: data\eval\summary_improved_20261101_201241.json
+(.venv) PS C:\Users\Иван\Desktop\PharmaQC>

@@ -1,0 +1,1318 @@
+{
+  "run_metadata": {
+    "timestamp": "2026-10-25T21:31:43.759786",
+    "config_file": "config\\app.yaml",
+    "preset": null,
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "chroma_path": "data/vector_store/chroma_db",
+    "collection_name": "rag_documents",
+    "top_k": 5,
+    "similarity_threshold": 0.8,
+    "llm_model": "openai/gpt-oss-20b",
+    "total_questions": 10,
+    "avg_response_time_ms": 3880.33
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "Как маркируется сырьё, находящееся в карантине?",
+      "type": "exact",
+      "expected_source": "Контроль качества сырья",
+      "expected_facts": "Жёлтая этикетка «КАРАНТИН» с датой поступления и номером серии",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk5",
+          "text": "- срок годности 2.2. Сырьё помещается в карантинную зону до получения результатов анализа. 2.3. Маркировка карантинного сырья: жёлтая этикетка «КАРАНТИН» с указанием даты поступления и номера серии.",
+          "score": 0.8947,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "date": "2024-03-15",
+            "version": "2.1",
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "category": "quality_control",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "chunk_size": 198,
+            "original_filename": "raw_materials_qc.txt",
+            "section": "quality_control",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk5",
+            "chunk_index": 5,
+            "document_name": "Контроль качества сырья"
+          }
+        },
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk15",
+          "text": "- отклонения не превышают допустимых пределов (±2% для количественных показателей) 5.3. Решение о статусе сырья: - «Разрешено к использованию» — зелёная этикетка - «Отклонено» — красная этикетка",
+          "score": 0.8242,
+          "metadata": {
+            "file_type": "txt",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "chunk_index": 15,
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "version": "2.1",
+            "embedding_dimensions": 768,
+            "document_name": "Контроль качества сырья",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk15",
+            "section": "quality_control",
+            "original_filename": "raw_materials_qc.txt",
+            "chunk_size": 194,
+            "date": "2024-03-15",
+            "chunk_overlap": 40,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "category": "quality_control"
+          }
+        },
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk8",
+          "text": "3.3. Пробы отбираются стерильным инструментом в чистую тару с соответствующей маркировкой. 3.4. Отобранные пробы регистрируются в журнале отбора проб с указанием: - наименование сырья",
+          "score": 0.8188,
+          "metadata": {
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "version": "2.1",
+            "date": "2024-03-15",
+            "chunk_overlap": 40,
+            "file_type": "txt",
+            "chunk_size": 183,
+            "embedding_dimensions": 768,
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk8",
+            "document_name": "Контроль качества сырья",
+            "chunk_index": 8,
+            "category": "quality_control",
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "section": "quality_control",
+            "original_filename": "raw_materials_qc.txt"
+          }
+        },
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk3",
+          "text": "1.3. Все операции по контролю должны документироваться в журнале входного контроля. 2. Приёмка сырья 2.1. При поступлении сырья проверяется: - целостность упаковки и маркировки",
+          "score": 0.8138,
+          "metadata": {
+            "chunk_index": 3,
+            "document_name": "Контроль качества сырья",
+            "embedding_dimensions": 768,
+            "date": "2024-03-15",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk3",
+            "original_filename": "raw_materials_qc.txt",
+            "chunk_overlap": 40,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "category": "quality_control",
+            "file_type": "txt",
+            "version": "2.1",
+            "section": "quality_control",
+            "chunk_size": 176
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk4",
+          "text": "2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности",
+          "score": 0.8053,
+          "metadata": {
+            "version": "2.5",
+            "file_type": "txt",
+            "source": "data\\raw\\deviation_management.txt",
+            "category": "deviations",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk4",
+            "chunk_index": 4,
+            "chunk_size": 148,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "document_name": "Управление отклонениями",
+            "section": "deviations",
+            "original_filename": "deviation_management.txt",
+            "embedding_dimensions": 768,
+            "chunk_overlap": 40,
+            "date": "2024-09-10",
+            "embedding_model": "intfloat/multilingual-e5-base"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: - срок годности 2.2. Сырьё помещается в карантинную зону до получения результатов анализа. 2.3. Маркировка карантинного сырья: жёлтая этикетка «КАРАНТИН» с указанием даты поступления и номера серии.\n\n[Фрагмент 2]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: - отклонения не превышают допустимых пределов (±2% для количественных показателей) 5.3. Решение о статусе сырья: - «Разрешено к использованию» — зелёная этикетка - «Отклонено» — красная этикетка\n\n[Фрагмент 3]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: 3.3. Пробы отбираются стерильным инструментом в чистую тару с соответствующей маркировкой. 3.4. Отобранные пробы регистрируются в журнале отбора проб с указанием: - наименование сырья\n\n[Фрагмент 4]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: 1.3. Все операции по контролю должны документироваться в журнале входного контроля. 2. Приёмка сырья 2.1. При поступлении сырья проверяется: - целостность упаковки и маркировки\n\n[Фрагмент 5]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности\n",
+      "answer": "Жёлтая этикетка «КАРАНТИН» с указанием даты поступления и номера серии.",
+      "sources": [
+        "Управление отклонениями",
+        "Контроль качества сырья"
+      ],
+      "refused": false,
+      "response_time_ms": 1497.29,
+      "timestamp": "2026-10-25T21:31:06.439296"
+    },
+    {
+      "id": 2,
+      "question": "Какие условия требуются для долгосрочных исследований стабильности?",
+      "type": "exact",
+      "expected_source": "Исследование стабильности",
+      "expected_facts": "25°C ± 2°C и 60% ± 5% влажности, длительность 24-60 месяцев",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_863cb2a56d79a241_chunk3",
+          "text": "- существующие препараты при изменении технологии или состава - ежегодный мониторинг серийной продукции 2. Виды исследований стабильности 2.1. Долгосрочные исследования (real-time stability):",
+          "score": 0.8713,
+          "metadata": {
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "chunk_size": 191,
+            "chunk_id": "doc_863cb2a56d79a241_chunk3",
+            "embedding_dimensions": 768,
+            "date": "2024-06-01",
+            "document_name": "Исследование стабильности",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 3,
+            "source": "data\\raw\\stability_testing.txt",
+            "original_filename": "stability_testing.txt",
+            "category": "stability",
+            "file_type": "txt",
+            "section": "stability",
+            "document_id": "doc_863cb2a56d79a241"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk5",
+          "text": "2.2. Ускоренные исследования (accelerated stability): - условия: 40°C ± 2°C / 75% ± 5% относительной влажности - длительность: 6 месяцев - точки отбора: 0, 1, 2, 3, 6 месяцев",
+          "score": 0.8461,
+          "metadata": {
+            "chunk_index": 5,
+            "date": "2024-06-01",
+            "file_type": "txt",
+            "document_name": "Исследование стабильности",
+            "document_id": "doc_863cb2a56d79a241",
+            "category": "stability",
+            "chunk_size": 174,
+            "version": "3.0",
+            "chunk_id": "doc_863cb2a56d79a241_chunk5",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "source": "data\\raw\\stability_testing.txt",
+            "chunk_overlap": 40,
+            "original_filename": "stability_testing.txt",
+            "embedding_dimensions": 768,
+            "section": "stability"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk2",
+          "text": "1.2. Исследования проводятся в соответствии с требованиями ICH Q1A(R2) и руководствами ЕАЭС. 1.3. Программа стабильности охватывает: - новые лекарственные препараты при разработке",
+          "score": 0.8444,
+          "metadata": {
+            "original_filename": "stability_testing.txt",
+            "embedding_dimensions": 768,
+            "date": "2024-06-01",
+            "category": "stability",
+            "file_type": "txt",
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_size": 179,
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 2,
+            "chunk_id": "doc_863cb2a56d79a241_chunk2",
+            "source": "data\\raw\\stability_testing.txt",
+            "document_name": "Исследование стабильности",
+            "section": "stability"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk1",
+          "text": "1. Цели и область применения 1.1. Настоящая процедура определяет порядок проведения исследований стабильности лекарственных препаратов для установления срока годности и условий хранения. 1.2.",
+          "score": 0.8415,
+          "metadata": {
+            "date": "2024-06-01",
+            "section": "stability",
+            "chunk_index": 1,
+            "original_filename": "stability_testing.txt",
+            "source": "data\\raw\\stability_testing.txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_overlap": 40,
+            "chunk_size": 191,
+            "chunk_id": "doc_863cb2a56d79a241_chunk1",
+            "file_type": "txt",
+            "version": "3.0",
+            "embedding_dimensions": 768,
+            "document_name": "Исследование стабильности",
+            "category": "stability"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk0",
+          "text": "Процедура исследования стабильности лекарственных препаратов Версия 3.0 от 01.06.2024 1. Цели и область применения 1.1.",
+          "score": 0.8263,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "chunk_id": "doc_863cb2a56d79a241_chunk0",
+            "chunk_index": 0,
+            "original_filename": "stability_testing.txt",
+            "chunk_size": 119,
+            "category": "stability",
+            "section": "stability",
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "document_name": "Исследование стабильности",
+            "document_id": "doc_863cb2a56d79a241",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "source": "data\\raw\\stability_testing.txt",
+            "date": "2024-06-01",
+            "file_type": "txt"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: - существующие препараты при изменении технологии или состава - ежегодный мониторинг серийной продукции 2. Виды исследований стабильности 2.1. Долгосрочные исследования (real-time stability):\n\n[Фрагмент 2]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 2.2. Ускоренные исследования (accelerated stability): - условия: 40°C ± 2°C / 75% ± 5% относительной влажности - длительность: 6 месяцев - точки отбора: 0, 1, 2, 3, 6 месяцев\n\n[Фрагмент 3]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 1.2. Исследования проводятся в соответствии с требованиями ICH Q1A(R2) и руководствами ЕАЭС. 1.3. Программа стабильности охватывает: - новые лекарственные препараты при разработке\n\n[Фрагмент 4]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 1. Цели и область применения 1.1. Настоящая процедура определяет порядок проведения исследований стабильности лекарственных препаратов для установления срока годности и условий хранения. 1.2.\n\n[Фрагмент 5]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: Процедура исследования стабильности лекарственных препаратов Версия 3.0 от 01.06.2024 1. Цели и область применения 1.1.\n",
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "sources": [
+        "Исследование стабильности"
+      ],
+      "refused": true,
+      "response_time_ms": 816.02,
+      "timestamp": "2026-10-25T21:31:07.257689"
+    },
+    {
+      "id": 3,
+      "question": "Какой срок даётся на расследование критического отклонения?",
+      "type": "exact",
+      "expected_source": "Управление отклонениями",
+      "expected_facts": "Не более 30 календарных дней",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk14",
+          "text": "4.4. Срок расследования: - критические отклонения: не более 30 календарных дней - некритические отклонения: не более 60 календарных дней 5. Корректирующие и предупреждающие действия (CAPA) 5.1.",
+          "score": 0.8935,
+          "metadata": {
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk14",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "version": "2.5",
+            "embedding_dimensions": 768,
+            "source": "data\\raw\\deviation_management.txt",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_size": 193,
+            "section": "deviations",
+            "category": "deviations",
+            "original_filename": "deviation_management.txt",
+            "date": "2024-09-10",
+            "file_type": "txt",
+            "chunk_index": 14,
+            "chunk_overlap": 40,
+            "document_name": "Управление отклонениями"
+          }
+        },
+        {
+          "id": "doc_229d8a9b724652c9_chunk13",
+          "text": "3.5. По результатам аудита составляется отчёт с перечнем выявленных несоответствий. 3.6. Срок устранения критических несоответствий: 30 дней. 3.7.",
+          "score": 0.864,
+          "metadata": {
+            "category": "quality_management",
+            "embedding_dimensions": 768,
+            "document_id": "doc_229d8a9b724652c9",
+            "date": "2025-01-05",
+            "source": "data\\raw\\quality_system.txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_size": 146,
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "section": "quality_management",
+            "version": "1.3",
+            "original_filename": "quality_system.txt",
+            "chunk_index": 13,
+            "document_name": "Система управления качеством",
+            "chunk_id": "doc_229d8a9b724652c9_chunk13"
+          }
+        },
+        {
+          "id": "doc_229d8a9b724652c9_chunk14",
+          "text": "3.7. Срок устранения некритических несоответствий: 60 дней. 4. Управление рисками для качества 4.1. Оценка рисков проводится по методологии ICH Q9. 4.2. Методы оценки рисков:",
+          "score": 0.8437,
+          "metadata": {
+            "chunk_index": 14,
+            "category": "quality_management",
+            "document_id": "doc_229d8a9b724652c9",
+            "chunk_overlap": 40,
+            "file_type": "txt",
+            "date": "2025-01-05",
+            "chunk_size": 174,
+            "chunk_id": "doc_229d8a9b724652c9_chunk14",
+            "document_name": "Система управления качеством",
+            "version": "1.3",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "section": "quality_management",
+            "source": "data\\raw\\quality_system.txt",
+            "original_filename": "quality_system.txt",
+            "embedding_dimensions": 768
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk4",
+          "text": "2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности",
+          "score": 0.8433,
+          "metadata": {
+            "original_filename": "deviation_management.txt",
+            "category": "deviations",
+            "chunk_index": 4,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk4",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "embedding_dimensions": 768,
+            "chunk_size": 148,
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "date": "2024-09-10",
+            "version": "2.5",
+            "source": "data\\raw\\deviation_management.txt",
+            "section": "deviations",
+            "document_name": "Управление отклонениями"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk11",
+          "text": "4. Расследование отклонений 4.1. Расследование проводится комиссией в составе: - представитель ОКК (председатель) - представитель подразделения, где произошло отклонение",
+          "score": 0.8331,
+          "metadata": {
+            "version": "2.5",
+            "date": "2024-09-10",
+            "document_name": "Управление отклонениями",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 11,
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk11",
+            "category": "deviations",
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "section": "deviations",
+            "source": "data\\raw\\deviation_management.txt",
+            "chunk_size": 169,
+            "embedding_dimensions": 768,
+            "original_filename": "deviation_management.txt"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 4.4. Срок расследования: - критические отклонения: не более 30 календарных дней - некритические отклонения: не более 60 календарных дней 5. Корректирующие и предупреждающие действия (CAPA) 5.1.\n\n[Фрагмент 2]\nИсточник: Система управления качеством\nКатегория: quality_management\nТекст: 3.5. По результатам аудита составляется отчёт с перечнем выявленных несоответствий. 3.6. Срок устранения критических несоответствий: 30 дней. 3.7.\n\n[Фрагмент 3]\nИсточник: Система управления качеством\nКатегория: quality_management\nТекст: 3.7. Срок устранения некритических несоответствий: 60 дней. 4. Управление рисками для качества 4.1. Оценка рисков проводится по методологии ICH Q9. 4.2. Методы оценки рисков:\n\n[Фрагмент 4]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности\n\n[Фрагмент 5]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 4. Расследование отклонений 4.1. Расследование проводится комиссией в составе: - представитель ОКК (председатель) - представитель подразделения, где произошло отклонение\n",
+      "answer": "Не более 30 календарных дней.",
+      "sources": [
+        "Управление отклонениями",
+        "Система управления качеством"
+      ],
+      "refused": false,
+      "response_time_ms": 590.77,
+      "timestamp": "2026-10-25T21:31:07.849740"
+    },
+    {
+      "id": 4,
+      "question": "Что включает в себя квалификация монтажа оборудования (IQ)?",
+      "type": "exact",
+      "expected_source": "Валидация оборудования",
+      "expected_facts": "Проверка соответствия проекту, сертификаты, подключение, средства контроля",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_5bd8aa96735106ed_chunk4",
+          "text": "- новых технологических процессов - переноса производства на другую площадку 2. Квалификация оборудования 2.1. Квалификация монтажа (IQ — Installation Qualification):",
+          "score": 0.8917,
+          "metadata": {
+            "date": "2024-11-20",
+            "embedding_dimensions": 768,
+            "chunk_overlap": 40,
+            "original_filename": "equipment_validation.txt",
+            "document_name": "Валидация оборудования",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk4",
+            "category": "validation",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 4,
+            "version": "1.8",
+            "source": "data\\raw\\equipment_validation.txt",
+            "chunk_size": 166,
+            "file_type": "txt",
+            "document_id": "doc_5bd8aa96735106ed",
+            "section": "validation"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk6",
+          "text": "- документ: протокол IQ по форме Ф-ИНЖ-001 2.2. Квалификация функционирования (OQ — Operational Qualification): - проверка работоспособности всех функций оборудования",
+          "score": 0.8487,
+          "metadata": {
+            "section": "validation",
+            "date": "2024-11-20",
+            "chunk_overlap": 40,
+            "chunk_id": "doc_5bd8aa96735106ed_chunk6",
+            "file_type": "txt",
+            "version": "1.8",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "embedding_dimensions": 768,
+            "category": "validation",
+            "original_filename": "equipment_validation.txt",
+            "document_id": "doc_5bd8aa96735106ed",
+            "source": "data\\raw\\equipment_validation.txt",
+            "document_name": "Валидация оборудования",
+            "chunk_index": 6,
+            "chunk_size": 166
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk5",
+          "text": "- проверка соответствия оборудования проекту и спецификациям - наличие сертификатов и паспортов - правильность подключения к инженерным сетям - наличие необходимых средств измерения и контроля",
+          "score": 0.8349,
+          "metadata": {
+            "category": "validation",
+            "chunk_size": 192,
+            "embedding_dimensions": 768,
+            "section": "validation",
+            "document_name": "Валидация оборудования",
+            "source": "data\\raw\\equipment_validation.txt",
+            "document_id": "doc_5bd8aa96735106ed",
+            "version": "1.8",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "original_filename": "equipment_validation.txt",
+            "date": "2024-11-20",
+            "chunk_index": 5,
+            "chunk_id": "doc_5bd8aa96735106ed_chunk5",
+            "file_type": "txt",
+            "chunk_overlap": 40
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk21",
+          "text": "7.3. Квалификация камер проводится ежегодно (IQ/OQ/PQ). 7.4. При отклонении условий более чем на 24 часа образцы подвергаются внеплановой оценке.",
+          "score": 0.8183,
+          "metadata": {
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_index": 21,
+            "original_filename": "stability_testing.txt",
+            "chunk_id": "doc_863cb2a56d79a241_chunk21",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "source": "data\\raw\\stability_testing.txt",
+            "chunk_size": 145,
+            "document_name": "Исследование стабильности",
+            "date": "2024-06-01",
+            "section": "stability",
+            "embedding_dimensions": 768,
+            "file_type": "txt",
+            "category": "stability"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk8",
+          "text": "2.3. Квалификация эксплуатации (PQ — Performance Qualification): - тестирование с реальной продукцией или имитатором - минимум 3 последовательных цикла - подтверждение стабильности результатов",
+          "score": 0.8104,
+          "metadata": {
+            "category": "validation",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_name": "Валидация оборудования",
+            "version": "1.8",
+            "document_id": "doc_5bd8aa96735106ed",
+            "section": "validation",
+            "chunk_index": 8,
+            "chunk_id": "doc_5bd8aa96735106ed_chunk8",
+            "chunk_overlap": 40,
+            "file_type": "txt",
+            "source": "data\\raw\\equipment_validation.txt",
+            "date": "2024-11-20",
+            "original_filename": "equipment_validation.txt",
+            "chunk_size": 192,
+            "embedding_dimensions": 768
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - новых технологических процессов - переноса производства на другую площадку 2. Квалификация оборудования 2.1. Квалификация монтажа (IQ — Installation Qualification):\n\n[Фрагмент 2]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - документ: протокол IQ по форме Ф-ИНЖ-001 2.2. Квалификация функционирования (OQ — Operational Qualification): - проверка работоспособности всех функций оборудования\n\n[Фрагмент 3]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - проверка соответствия оборудования проекту и спецификациям - наличие сертификатов и паспортов - правильность подключения к инженерным сетям - наличие необходимых средств измерения и контроля\n\n[Фрагмент 4]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 7.3. Квалификация камер проводится ежегодно (IQ/OQ/PQ). 7.4. При отклонении условий более чем на 24 часа образцы подвергаются внеплановой оценке.\n\n[Фрагмент 5]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: 2.3. Квалификация эксплуатации (PQ — Performance Qualification): - тестирование с реальной продукцией или имитатором - минимум 3 последовательных цикла - подтверждение стабильности результатов\n",
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "sources": [
+        "Исследование стабильности",
+        "Валидация оборудования"
+      ],
+      "refused": true,
+      "response_time_ms": 598.34,
+      "timestamp": "2026-10-25T21:31:08.451286"
+    },
+    {
+      "id": 5,
+      "question": "При входном контроле выявили, что содержание действующего вещества в сырье отклонилось на 3% от нормы. Какое решение должно быть принято?",
+      "type": "multi_hop",
+      "expected_source": "Контроль качества сырья + Управление отклонениями",
+      "expected_facts": "Отклонение 3% в пределах допустимого (±2% для критических, но сырьё может быть условно допущено). Оформляется отклонение, проводится расследование, сырьё получает синюю этикетку «Условно допущено»",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk15",
+          "text": "- отклонения не превышают допустимых пределов (±2% для количественных показателей) 5.3. Решение о статусе сырья: - «Разрешено к использованию» — зелёная этикетка - «Отклонено» — красная этикетка",
+          "score": 0.8592,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "chunk_index": 15,
+            "category": "quality_control",
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "chunk_size": 194,
+            "file_type": "txt",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "section": "quality_control",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_name": "Контроль качества сырья",
+            "version": "2.1",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk15",
+            "date": "2024-03-15",
+            "chunk_overlap": 40,
+            "original_filename": "raw_materials_qc.txt"
+          }
+        },
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk3",
+          "text": "1.3. Все операции по контролю должны документироваться в журнале входного контроля. 2. Приёмка сырья 2.1. При поступлении сырья проверяется: - целостность упаковки и маркировки",
+          "score": 0.8579,
+          "metadata": {
+            "chunk_size": 176,
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk3",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "file_type": "txt",
+            "original_filename": "raw_materials_qc.txt",
+            "chunk_overlap": 40,
+            "version": "2.1",
+            "category": "quality_control",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_name": "Контроль качества сырья",
+            "chunk_index": 3,
+            "section": "quality_control",
+            "date": "2024-03-15",
+            "embedding_dimensions": 768
+          }
+        },
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk1",
+          "text": "1. Общие положения 1.1. Настоящая процедура устанавливает порядок входного контроля сырья, вспомогательных материалов и упаковочных материалов, поступающих на фармацевтическое производство. 1.2.",
+          "score": 0.8558,
+          "metadata": {
+            "version": "2.1",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "section": "quality_control",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "date": "2024-03-15",
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk1",
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "chunk_overlap": 40,
+            "document_name": "Контроль качества сырья",
+            "category": "quality_control",
+            "embedding_dimensions": 768,
+            "original_filename": "raw_materials_qc.txt",
+            "chunk_size": 194,
+            "chunk_index": 1,
+            "file_type": "txt"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk5",
+          "text": "- отклонение в количественном содержании действующего вещества более ±5% - нарушение стерильности при производстве инъекционных форм - перепутывание серий или продуктов",
+          "score": 0.8522,
+          "metadata": {
+            "source": "data\\raw\\deviation_management.txt",
+            "file_type": "txt",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk5",
+            "date": "2024-09-10",
+            "document_name": "Управление отклонениями",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "version": "2.5",
+            "section": "deviations",
+            "original_filename": "deviation_management.txt",
+            "category": "deviations",
+            "chunk_overlap": 40,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_size": 168,
+            "chunk_index": 5,
+            "embedding_dimensions": 768
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk14",
+          "text": "5. Критерии приёмки 5.1. Препарат считается стабильным, если: - содержание действующего вещества остаётся в пределах 95–105% от заявленного - содержание примесей не превышает установленных пределов",
+          "score": 0.851,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "date": "2024-06-01",
+            "document_id": "doc_863cb2a56d79a241",
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "source": "data\\raw\\stability_testing.txt",
+            "section": "stability",
+            "chunk_size": 197,
+            "original_filename": "stability_testing.txt",
+            "chunk_index": 14,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_id": "doc_863cb2a56d79a241_chunk14",
+            "document_name": "Исследование стабильности",
+            "category": "stability"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: - отклонения не превышают допустимых пределов (±2% для количественных показателей) 5.3. Решение о статусе сырья: - «Разрешено к использованию» — зелёная этикетка - «Отклонено» — красная этикетка\n\n[Фрагмент 2]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: 1.3. Все операции по контролю должны документироваться в журнале входного контроля. 2. Приёмка сырья 2.1. При поступлении сырья проверяется: - целостность упаковки и маркировки\n\n[Фрагмент 3]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: 1. Общие положения 1.1. Настоящая процедура устанавливает порядок входного контроля сырья, вспомогательных материалов и упаковочных материалов, поступающих на фармацевтическое производство. 1.2.\n\n[Фрагмент 4]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: - отклонение в количественном содержании действующего вещества более ±5% - нарушение стерильности при производстве инъекционных форм - перепутывание серий или продуктов\n\n[Фрагмент 5]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 5. Критерии приёмки 5.1. Препарат считается стабильным, если: - содержание действующего вещества остаётся в пределах 95–105% от заявленного - содержание примесей не превышает установленных пределов\n",
+      "answer": "Отклонено (красная этикетка).  \nСогласно правилу входного контроля: отклонения не превышают допустимых пределов ±2 % для количественных показателей. При отклонении 3 % решение – отклонить сырье.",
+      "sources": [
+        "Исследование стабильности",
+        "Управление отклонениями",
+        "Контроль качества сырья"
+      ],
+      "refused": false,
+      "response_time_ms": 822.43,
+      "timestamp": "2026-10-25T21:31:09.276040"
+    },
+    {
+      "id": 6,
+      "question": "Как часто нужно проводить ре-квалификацию таблеточного пресса?",
+      "type": "no_answer",
+      "expected_source": null,
+      "expected_facts": "Информации нет в документах (указано общее правило 2-3 года, но конкретное оборудование не упомянуто)",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_5bd8aa96735106ed_chunk9",
+          "text": "- документ: протокол PQ по форме Ф-ИНЖ-003 2.4. Ре-квалификация проводится: - планово: каждые 2–3 года - внепланово: после ремонта, перемещения, длительного простоя 3.",
+          "score": 0.8463,
+          "metadata": {
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "date": "2024-11-20",
+            "file_type": "txt",
+            "category": "validation",
+            "chunk_size": 167,
+            "chunk_overlap": 40,
+            "chunk_id": "doc_5bd8aa96735106ed_chunk9",
+            "version": "1.8",
+            "chunk_index": 9,
+            "document_name": "Валидация оборудования",
+            "document_id": "doc_5bd8aa96735106ed",
+            "original_filename": "equipment_validation.txt",
+            "source": "data\\raw\\equipment_validation.txt",
+            "section": "validation",
+            "embedding_dimensions": 768
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk21",
+          "text": "7.3. Квалификация камер проводится ежегодно (IQ/OQ/PQ). 7.4. При отклонении условий более чем на 24 часа образцы подвергаются внеплановой оценке.",
+          "score": 0.8282,
+          "metadata": {
+            "chunk_size": 145,
+            "section": "stability",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "original_filename": "stability_testing.txt",
+            "embedding_dimensions": 768,
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_overlap": 40,
+            "version": "3.0",
+            "chunk_id": "doc_863cb2a56d79a241_chunk21",
+            "file_type": "txt",
+            "category": "stability",
+            "document_name": "Исследование стабильности",
+            "date": "2024-06-01",
+            "chunk_index": 21,
+            "source": "data\\raw\\stability_testing.txt"
+          }
+        },
+        {
+          "id": "doc_229d8a9b724652c9_chunk25",
+          "text": "- изъятие продукции из оборота - утилизация или возврат на переработку - информирование общественности (при необходимости) 6.5. Ежегодная проверка эффективности процедуры отзыва (репетиция отзыва).",
+          "score": 0.8278,
+          "metadata": {
+            "source": "data\\raw\\quality_system.txt",
+            "chunk_id": "doc_229d8a9b724652c9_chunk25",
+            "document_id": "doc_229d8a9b724652c9",
+            "section": "quality_management",
+            "date": "2025-01-05",
+            "version": "1.3",
+            "chunk_overlap": 40,
+            "embedding_dimensions": 768,
+            "chunk_index": 25,
+            "original_filename": "quality_system.txt",
+            "document_name": "Система управления качеством",
+            "category": "quality_management",
+            "file_type": "txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_size": 197
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk14",
+          "text": "- усилие прессования, скорость вращения ротора (для таблеточных прессов) 4. Валидация методов очистки 4.1.",
+          "score": 0.825,
+          "metadata": {
+            "version": "1.8",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_overlap": 40,
+            "category": "validation",
+            "document_name": "Валидация оборудования",
+            "embedding_dimensions": 768,
+            "chunk_size": 106,
+            "document_id": "doc_5bd8aa96735106ed",
+            "date": "2024-11-20",
+            "section": "validation",
+            "chunk_index": 14,
+            "source": "data\\raw\\equipment_validation.txt",
+            "file_type": "txt",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk14",
+            "original_filename": "equipment_validation.txt"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk18",
+          "text": "- ополаскивающие растворы - контактные пластины (для микробиологии) 4.4. Проводится минимум 3 последовательных цикла очистки. 5. Валидация аналитических методик 5.1.",
+          "score": 0.8217,
+          "metadata": {
+            "chunk_overlap": 40,
+            "file_type": "txt",
+            "document_id": "doc_5bd8aa96735106ed",
+            "date": "2024-11-20",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "version": "1.8",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk18",
+            "category": "validation",
+            "source": "data\\raw\\equipment_validation.txt",
+            "embedding_dimensions": 768,
+            "original_filename": "equipment_validation.txt",
+            "document_name": "Валидация оборудования",
+            "section": "validation",
+            "chunk_index": 18,
+            "chunk_size": 165
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - документ: протокол PQ по форме Ф-ИНЖ-003 2.4. Ре-квалификация проводится: - планово: каждые 2–3 года - внепланово: после ремонта, перемещения, длительного простоя 3.\n\n[Фрагмент 2]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 7.3. Квалификация камер проводится ежегодно (IQ/OQ/PQ). 7.4. При отклонении условий более чем на 24 часа образцы подвергаются внеплановой оценке.\n\n[Фрагмент 3]\nИсточник: Система управления качеством\nКатегория: quality_management\nТекст: - изъятие продукции из оборота - утилизация или возврат на переработку - информирование общественности (при необходимости) 6.5. Ежегодная проверка эффективности процедуры отзыва (репетиция отзыва).\n\n[Фрагмент 4]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - усилие прессования, скорость вращения ротора (для таблеточных прессов) 4. Валидация методов очистки 4.1.\n\n[Фрагмент 5]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - ополаскивающие растворы - контактные пластины (для микробиологии) 4.4. Проводится минимум 3 последовательных цикла очистки. 5. Валидация аналитических методик 5.1.\n",
+      "answer": "К сожалению, в доступных документах нет информации о частоте ре‑квалификации именно таблеточного пресса. Указано общее правило: ре‑квалификация проводится каждые 2–3 года.",
+      "sources": [
+        "Исследование стабильности",
+        "Система управления качеством",
+        "Валидация оборудования"
+      ],
+      "refused": true,
+      "response_time_ms": 893.07,
+      "timestamp": "2026-10-25T21:31:10.170096"
+    },
+    {
+      "id": 7,
+      "question": "Какая максимальная температура допускается при хранении инъекционных растворов?",
+      "type": "no_answer",
+      "expected_source": null,
+      "expected_facts": "Информации нет в документах (температурные условия хранения конкретных продуктов не указаны)",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk5",
+          "text": "- отклонение в количественном содержании действующего вещества более ±5% - нарушение стерильности при производстве инъекционных форм - перепутывание серий или продуктов",
+          "score": 0.8306,
+          "metadata": {
+            "chunk_index": 5,
+            "version": "2.5",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "section": "deviations",
+            "source": "data\\raw\\deviation_management.txt",
+            "document_name": "Управление отклонениями",
+            "category": "deviations",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk5",
+            "chunk_size": 168,
+            "chunk_overlap": 40,
+            "date": "2024-09-10",
+            "file_type": "txt",
+            "embedding_dimensions": 768,
+            "original_filename": "deviation_management.txt"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk10",
+          "text": "3.4. Образцы хранятся в климатических камерах с непрерывным мониторингом температуры и влажности. 4. Контролируемые показатели 4.1. Физико-химические: - внешний вид, цвет, запах",
+          "score": 0.8171,
+          "metadata": {
+            "category": "stability",
+            "source": "data\\raw\\stability_testing.txt",
+            "chunk_overlap": 40,
+            "date": "2024-06-01",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_size": 177,
+            "section": "stability",
+            "chunk_id": "doc_863cb2a56d79a241_chunk10",
+            "embedding_dimensions": 768,
+            "file_type": "txt",
+            "original_filename": "stability_testing.txt",
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_index": 10,
+            "version": "3.0",
+            "document_name": "Исследование стабильности"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk14",
+          "text": "5. Критерии приёмки 5.1. Препарат считается стабильным, если: - содержание действующего вещества остаётся в пределах 95–105% от заявленного - содержание примесей не превышает установленных пределов",
+          "score": 0.8146,
+          "metadata": {
+            "source": "data\\raw\\stability_testing.txt",
+            "date": "2024-06-01",
+            "chunk_size": 197,
+            "document_name": "Исследование стабильности",
+            "embedding_dimensions": 768,
+            "category": "stability",
+            "chunk_overlap": 40,
+            "chunk_id": "doc_863cb2a56d79a241_chunk14",
+            "document_id": "doc_863cb2a56d79a241",
+            "section": "stability",
+            "file_type": "txt",
+            "chunk_index": 14,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "version": "3.0",
+            "original_filename": "stability_testing.txt"
+          }
+        },
+        {
+          "id": "doc_863cb2a56d79a241_chunk4",
+          "text": "- условия: 25°C ± 2°C / 60% ± 5% относительной влажности - длительность: весь заявленный срок годности (обычно 24–60 месяцев) - точки отбора: 0, 3, 6, 9, 12, 18, 24, 36, 48, 60 месяцев 2.2.",
+          "score": 0.809,
+          "metadata": {
+            "source": "data\\raw\\stability_testing.txt",
+            "category": "stability",
+            "chunk_overlap": 40,
+            "chunk_index": 4,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "file_type": "txt",
+            "document_id": "doc_863cb2a56d79a241",
+            "chunk_size": 189,
+            "section": "stability",
+            "document_name": "Исследование стабильности",
+            "embedding_dimensions": 768,
+            "date": "2024-06-01",
+            "original_filename": "stability_testing.txt",
+            "chunk_id": "doc_863cb2a56d79a241_chunk4",
+            "version": "3.0"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk16",
+          "text": "4.2. Критерии приёмки: - остатки продукта: не более 10 ppm или 1/1000 терапевтической дозы - моющие средства: не обнаруживаются или в допустимых пределах",
+          "score": 0.808,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "file_type": "txt",
+            "category": "validation",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_size": 153,
+            "document_name": "Валидация оборудования",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk16",
+            "original_filename": "equipment_validation.txt",
+            "section": "validation",
+            "chunk_overlap": 40,
+            "source": "data\\raw\\equipment_validation.txt",
+            "date": "2024-11-20",
+            "document_id": "doc_5bd8aa96735106ed",
+            "version": "1.8",
+            "chunk_index": 16
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: - отклонение в количественном содержании действующего вещества более ±5% - нарушение стерильности при производстве инъекционных форм - перепутывание серий или продуктов\n\n[Фрагмент 2]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 3.4. Образцы хранятся в климатических камерах с непрерывным мониторингом температуры и влажности. 4. Контролируемые показатели 4.1. Физико-химические: - внешний вид, цвет, запах\n\n[Фрагмент 3]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: 5. Критерии приёмки 5.1. Препарат считается стабильным, если: - содержание действующего вещества остаётся в пределах 95–105% от заявленного - содержание примесей не превышает установленных пределов\n\n[Фрагмент 4]\nИсточник: Исследование стабильности\nКатегория: stability\nТекст: - условия: 25°C ± 2°C / 60% ± 5% относительной влажности - длительность: весь заявленный срок годности (обычно 24–60 месяцев) - точки отбора: 0, 3, 6, 9, 12, 18, 24, 36, 48, 60 месяцев 2.2.\n\n[Фрагмент 5]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: 4.2. Критерии приёмки: - остатки продукта: не более 10 ppm или 1/1000 терапевтической дозы - моющие средства: не обнаруживаются или в допустимых пределах\n",
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "sources": [
+        "Исследование стабильности",
+        "Управление отклонениями",
+        "Валидация оборудования"
+      ],
+      "refused": true,
+      "response_time_ms": 2968.38,
+      "timestamp": "2026-10-25T21:31:13.139129"
+    },
+    {
+      "id": 8,
+      "question": "Какие методы анализа корневых причин отклонений предусмотрены процедурой?",
+      "type": "exact",
+      "expected_source": "Управление отклонениями",
+      "expected_facts": "Диаграмма Исикавы, метод «5 почему», FMEA-анализ",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk13",
+          "text": "- анализ документации - выявление корневой причины 4.3. Методы анализа корневых причин: - диаграмма Исикавы (рыбья кость) - метод «5 почему» - FMEA-анализ (анализ видов и последствий отказов) 4.4.",
+          "score": 0.8903,
+          "metadata": {
+            "embedding_dimensions": 768,
+            "original_filename": "deviation_management.txt",
+            "chunk_overlap": 40,
+            "category": "deviations",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk13",
+            "document_name": "Управление отклонениями",
+            "chunk_size": 196,
+            "version": "2.5",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 13,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "section": "deviations",
+            "source": "data\\raw\\deviation_management.txt",
+            "date": "2024-09-10",
+            "file_type": "txt"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk11",
+          "text": "4. Расследование отклонений 4.1. Расследование проводится комиссией в составе: - представитель ОКК (председатель) - представитель подразделения, где произошло отклонение",
+          "score": 0.841,
+          "metadata": {
+            "document_name": "Управление отклонениями",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk11",
+            "version": "2.5",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "date": "2024-09-10",
+            "chunk_index": 11,
+            "section": "deviations",
+            "file_type": "txt",
+            "embedding_dimensions": 768,
+            "source": "data\\raw\\deviation_management.txt",
+            "category": "deviations",
+            "chunk_size": 169,
+            "original_filename": "deviation_management.txt",
+            "chunk_overlap": 40
+          }
+        },
+        {
+          "id": "doc_229d8a9b724652c9_chunk15",
+          "text": "4.2. Методы оценки рисков: - FMEA (анализ видов и последствий отказов) — для процессов - HACCP — для микробиологических рисков - диаграмма Исикавы — для анализа причин",
+          "score": 0.8337,
+          "metadata": {
+            "original_filename": "quality_system.txt",
+            "document_id": "doc_229d8a9b724652c9",
+            "chunk_index": 15,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "section": "quality_management",
+            "file_type": "txt",
+            "chunk_overlap": 40,
+            "embedding_dimensions": 768,
+            "date": "2025-01-05",
+            "source": "data\\raw\\quality_system.txt",
+            "chunk_size": 167,
+            "document_name": "Система управления качеством",
+            "chunk_id": "doc_229d8a9b724652c9_chunk15",
+            "category": "quality_management",
+            "version": "1.3"
+          }
+        },
+        {
+          "id": "doc_229d8a9b724652c9_chunk20",
+          "text": "- основам GMP - правилам гигиены - процедурам конкретного подразделения - управлению отклонениями и CAPA 5.3. Оценка эффективности обучения: тестирование после каждого курса. 5.4.",
+          "score": 0.8297,
+          "metadata": {
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "file_type": "txt",
+            "chunk_size": 179,
+            "source": "data\\raw\\quality_system.txt",
+            "document_name": "Система управления качеством",
+            "document_id": "doc_229d8a9b724652c9",
+            "date": "2025-01-05",
+            "version": "1.3",
+            "original_filename": "quality_system.txt",
+            "section": "quality_management",
+            "chunk_overlap": 40,
+            "chunk_index": 20,
+            "embedding_dimensions": 768,
+            "category": "quality_management",
+            "chunk_id": "doc_229d8a9b724652c9_chunk20"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk15",
+          "text": "5.1. По результатам расследования разрабатываются: - корректирующие действия — устранение последствий отклонения - предупреждающие действия — предотвращение повторения 5.2.",
+          "score": 0.8253,
+          "metadata": {
+            "file_type": "txt",
+            "version": "2.5",
+            "chunk_size": 172,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "section": "deviations",
+            "chunk_overlap": 40,
+            "document_name": "Управление отклонениями",
+            "date": "2024-09-10",
+            "embedding_dimensions": 768,
+            "chunk_index": 15,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk15",
+            "original_filename": "deviation_management.txt",
+            "category": "deviations",
+            "source": "data\\raw\\deviation_management.txt"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: - анализ документации - выявление корневой причины 4.3. Методы анализа корневых причин: - диаграмма Исикавы (рыбья кость) - метод «5 почему» - FMEA-анализ (анализ видов и последствий отказов) 4.4.\n\n[Фрагмент 2]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 4. Расследование отклонений 4.1. Расследование проводится комиссией в составе: - представитель ОКК (председатель) - представитель подразделения, где произошло отклонение\n\n[Фрагмент 3]\nИсточник: Система управления качеством\nКатегория: quality_management\nТекст: 4.2. Методы оценки рисков: - FMEA (анализ видов и последствий отказов) — для процессов - HACCP — для микробиологических рисков - диаграмма Исикавы — для анализа причин\n\n[Фрагмент 4]\nИсточник: Система управления качеством\nКатегория: quality_management\nТекст: - основам GMP - правилам гигиены - процедурам конкретного подразделения - управлению отклонениями и CAPA 5.3. Оценка эффективности обучения: тестирование после каждого курса. 5.4.\n\n[Фрагмент 5]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 5.1. По результатам расследования разрабатываются: - корректирующие действия — устранение последствий отклонения - предупреждающие действия — предотвращение повторения 5.2.\n",
+      "answer": "Методы анализа корневых причин отклонений, предусмотренные процедурой, — это:\n\n- диаграмма Исикавы (рыбья кость)  \n- метод «5 почему»  \n- FMEA‑анализ (анализ видов и последствий отказов)",
+      "sources": [
+        "Управление отклонениями",
+        "Система управления качеством"
+      ],
+      "refused": false,
+      "response_time_ms": 9318.84,
+      "timestamp": "2026-10-25T21:31:22.458961"
+    },
+    {
+      "id": 9,
+      "question": "Какой порядок действий при обнаружении критического отклонения в температурном режиме хранения?",
+      "type": "multi_hop",
+      "expected_source": "Управление отклонениями + Контроль качества сырья",
+      "expected_facts": "Немедленно приостановить процесс, изолировать продукцию, уведомить руководителя и ОКК, зафиксировать в журнале. Срок регистрации — не позднее 24 часов.",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk8",
+          "text": "3. Порядок действий при обнаружении отклонения 3.1. Немедленные действия: - приостановить процесс (если применимо) - изолировать подозрительную продукцию",
+          "score": 0.8682,
+          "metadata": {
+            "source": "data\\raw\\deviation_management.txt",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk8",
+            "version": "2.5",
+            "file_type": "txt",
+            "chunk_size": 153,
+            "category": "deviations",
+            "embedding_dimensions": 768,
+            "date": "2024-09-10",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "document_name": "Управление отклонениями",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "section": "deviations",
+            "chunk_index": 8,
+            "chunk_overlap": 40,
+            "original_filename": "deviation_management.txt"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk4",
+          "text": "2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности",
+          "score": 0.8594,
+          "metadata": {
+            "chunk_overlap": 40,
+            "chunk_index": 4,
+            "original_filename": "deviation_management.txt",
+            "section": "deviations",
+            "embedding_dimensions": 768,
+            "file_type": "txt",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk4",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "chunk_size": 148,
+            "version": "2.5",
+            "source": "data\\raw\\deviation_management.txt",
+            "category": "deviations",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_name": "Управление отклонениями",
+            "date": "2024-09-10"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk9",
+          "text": "- изолировать подозрительную продукцию - уведомить непосредственного руководителя и отдел контроля качества - зафиксировать факт отклонения в журнале отклонений 3.2.",
+          "score": 0.8456,
+          "metadata": {
+            "file_type": "txt",
+            "chunk_size": 165,
+            "document_id": "doc_b9bba1e212a60cfc",
+            "category": "deviations",
+            "chunk_overlap": 40,
+            "original_filename": "deviation_management.txt",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk9",
+            "embedding_dimensions": 768,
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 9,
+            "document_name": "Управление отклонениями",
+            "section": "deviations",
+            "date": "2024-09-10",
+            "version": "2.5",
+            "source": "data\\raw\\deviation_management.txt"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk14",
+          "text": "4.4. Срок расследования: - критические отклонения: не более 30 календарных дней - некритические отклонения: не более 60 календарных дней 5. Корректирующие и предупреждающие действия (CAPA) 5.1.",
+          "score": 0.8341,
+          "metadata": {
+            "source": "data\\raw\\deviation_management.txt",
+            "category": "deviations",
+            "document_name": "Управление отклонениями",
+            "original_filename": "deviation_management.txt",
+            "embedding_dimensions": 768,
+            "chunk_size": 193,
+            "chunk_index": 14,
+            "chunk_overlap": 40,
+            "file_type": "txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "version": "2.5",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "section": "deviations",
+            "date": "2024-09-10",
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk14"
+          }
+        },
+        {
+          "id": "doc_b9bba1e212a60cfc_chunk6",
+          "text": "- перепутывание серий или продуктов - отсутствие документации о проведённых операциях 2.2. Некритические отклонения: - незначительные отклонения в оформлении документации",
+          "score": 0.8337,
+          "metadata": {
+            "chunk_index": 6,
+            "version": "2.5",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "document_id": "doc_b9bba1e212a60cfc",
+            "original_filename": "deviation_management.txt",
+            "category": "deviations",
+            "chunk_overlap": 40,
+            "section": "deviations",
+            "chunk_size": 170,
+            "embedding_dimensions": 768,
+            "chunk_id": "doc_b9bba1e212a60cfc_chunk6",
+            "file_type": "txt",
+            "source": "data\\raw\\deviation_management.txt",
+            "document_name": "Управление отклонениями",
+            "date": "2024-09-10"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 3. Порядок действий при обнаружении отклонения 3.1. Немедленные действия: - приостановить процесс (если применимо) - изолировать подозрительную продукцию\n\n[Фрагмент 2]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 2.1. Критические отклонения: - нарушение температурного режима хранения сырья или готовой продукции - использование сырья с истёкшим сроком годности\n\n[Фрагмент 3]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: - изолировать подозрительную продукцию - уведомить непосредственного руководителя и отдел контроля качества - зафиксировать факт отклонения в журнале отклонений 3.2.\n\n[Фрагмент 4]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: 4.4. Срок расследования: - критические отклонения: не более 30 календарных дней - некритические отклонения: не более 60 календарных дней 5. Корректирующие и предупреждающие действия (CAPA) 5.1.\n\n[Фрагмент 5]\nИсточник: Управление отклонениями\nКатегория: deviations\nТекст: - перепутывание серий или продуктов - отсутствие документации о проведённых операциях 2.2. Некритические отклонения: - незначительные отклонения в оформлении документации\n",
+      "answer": "При обнаружении критического отклонения в температурном режиме хранения необходимо выполнить следующие шаги:\n\n1. **Приостановить процесс** (если это применимо).  \n2. **Изолировать подозрительную продукцию**.  \n3. **Уведомить** непосредственного руководителя и отдел контроля качества.  \n4. **Зафиксировать факт отклонения** в журнале отклонений.\n\nЭти действия указаны в разделе «Порядок действий при обнаружении отклонения» и применяются к критическим отклонениям, включая нарушение температурного режима хранения.",
+      "sources": [
+        "Управление отклонениями"
+      ],
+      "refused": false,
+      "response_time_ms": 9677.37,
+      "timestamp": "2026-10-25T21:31:32.137166"
+    },
+    {
+      "id": 10,
+      "question": "Какой срок хранения протоколов валидации аналитических методик?",
+      "type": "no_answer",
+      "expected_source": null,
+      "expected_facts": "Информации нет в документах (указан срок хранения отчёта о валидации, но не протоколов методик)",
+      "top_k": 5,
+      "similarity_threshold": 0.8,
+      "retrieved_chunks": [
+        {
+          "id": "doc_637f7a9ed8219b9a_chunk18",
+          "text": "6.3. Срок хранения протоколов: не менее 5 лет после истечения срока годности готовой продукции. 6.4. Все записи должны быть сделаны несмываемыми чернилами, исправления заверяются подписью и датой. 7.",
+          "score": 0.8492,
+          "metadata": {
+            "document_name": "Контроль качества сырья",
+            "chunk_index": 18,
+            "source": "data\\raw\\raw_materials_qc.txt",
+            "embedding_dimensions": 768,
+            "chunk_id": "doc_637f7a9ed8219b9a_chunk18",
+            "chunk_size": 199,
+            "category": "quality_control",
+            "chunk_overlap": 40,
+            "original_filename": "raw_materials_qc.txt",
+            "document_id": "doc_637f7a9ed8219b9a",
+            "section": "quality_control",
+            "date": "2024-03-15",
+            "version": "2.1",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "file_type": "txt"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk24",
+          "text": "- методику проведения - перечень необходимого оборудования и материалов 6.3. Отчёт о валидации готовится после завершения всех испытаний. 6.4.",
+          "score": 0.8394,
+          "metadata": {
+            "document_name": "Валидация оборудования",
+            "version": "1.8",
+            "original_filename": "equipment_validation.txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_index": 24,
+            "category": "validation",
+            "file_type": "txt",
+            "embedding_dimensions": 768,
+            "date": "2024-11-20",
+            "source": "data\\raw\\equipment_validation.txt",
+            "chunk_size": 142,
+            "chunk_overlap": 40,
+            "chunk_id": "doc_5bd8aa96735106ed_chunk24",
+            "section": "validation",
+            "document_id": "doc_5bd8aa96735106ed"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk2",
+          "text": "1.2. Виды валидации: - квалификационные испытания (IQ/OQ/PQ) - валидация технологических процессов - валидация методов очистки - валидация аналитических методик 1.3. Валидация обязательна для:",
+          "score": 0.8357,
+          "metadata": {
+            "date": "2024-11-20",
+            "embedding_dimensions": 768,
+            "source": "data\\raw\\equipment_validation.txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "chunk_overlap": 40,
+            "document_name": "Валидация оборудования",
+            "category": "validation",
+            "file_type": "txt",
+            "section": "validation",
+            "original_filename": "equipment_validation.txt",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk2",
+            "document_id": "doc_5bd8aa96735106ed",
+            "chunk_size": 192,
+            "version": "1.8",
+            "chunk_index": 2
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk18",
+          "text": "- ополаскивающие растворы - контактные пластины (для микробиологии) 4.4. Проводится минимум 3 последовательных цикла очистки. 5. Валидация аналитических методик 5.1.",
+          "score": 0.8244,
+          "metadata": {
+            "chunk_id": "doc_5bd8aa96735106ed_chunk18",
+            "embedding_dimensions": 768,
+            "file_type": "txt",
+            "original_filename": "equipment_validation.txt",
+            "chunk_size": 165,
+            "category": "validation",
+            "document_name": "Валидация оборудования",
+            "chunk_overlap": 40,
+            "chunk_index": 18,
+            "version": "1.8",
+            "section": "validation",
+            "source": "data\\raw\\equipment_validation.txt",
+            "document_id": "doc_5bd8aa96735106ed",
+            "date": "2024-11-20",
+            "embedding_model": "intfloat/multilingual-e5-base"
+          }
+        },
+        {
+          "id": "doc_5bd8aa96735106ed_chunk12",
+          "text": "- усиленный мониторинг первых 10 серий 3.3. Ретроспективная валидация (для существующих процессов): - анализ данных минимум 20 последовательных серий - статистическая оценка стабильности процесса",
+          "score": 0.8227,
+          "metadata": {
+            "chunk_size": 195,
+            "section": "validation",
+            "chunk_id": "doc_5bd8aa96735106ed_chunk12",
+            "original_filename": "equipment_validation.txt",
+            "source": "data\\raw\\equipment_validation.txt",
+            "date": "2024-11-20",
+            "file_type": "txt",
+            "embedding_model": "intfloat/multilingual-e5-base",
+            "embedding_dimensions": 768,
+            "category": "validation",
+            "chunk_index": 12,
+            "document_name": "Валидация оборудования",
+            "version": "1.8",
+            "chunk_overlap": 40,
+            "document_id": "doc_5bd8aa96735106ed"
+          }
+        }
+      ],
+      "context": "[Фрагмент 1]\nИсточник: Контроль качества сырья\nКатегория: quality_control\nТекст: 6.3. Срок хранения протоколов: не менее 5 лет после истечения срока годности готовой продукции. 6.4. Все записи должны быть сделаны несмываемыми чернилами, исправления заверяются подписью и датой. 7.\n\n[Фрагмент 2]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - методику проведения - перечень необходимого оборудования и материалов 6.3. Отчёт о валидации готовится после завершения всех испытаний. 6.4.\n\n[Фрагмент 3]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: 1.2. Виды валидации: - квалификационные испытания (IQ/OQ/PQ) - валидация технологических процессов - валидация методов очистки - валидация аналитических методик 1.3. Валидация обязательна для:\n\n[Фрагмент 4]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - ополаскивающие растворы - контактные пластины (для микробиологии) 4.4. Проводится минимум 3 последовательных цикла очистки. 5. Валидация аналитических методик 5.1.\n\n[Фрагмент 5]\nИсточник: Валидация оборудования\nКатегория: validation\nТекст: - усиленный мониторинг первых 10 серий 3.3. Ретроспективная валидация (для существующих процессов): - анализ данных минимум 20 последовательных серий - статистическая оценка стабильности процесса\n",
+      "answer": "Срок хранения протоколов валидации аналитических методик не менее 5 лет после истечения срока годности готовой продукции. Это общее правило для всех протоколов.",
+      "sources": [
+        "Контроль качества сырья",
+        "Валидация оборудования"
+      ],
+      "refused": false,
+      "response_time_ms": 11620.83,
+      "timestamp": "2026-10-25T21:31:43.759720"
+    }
+  ]
+}

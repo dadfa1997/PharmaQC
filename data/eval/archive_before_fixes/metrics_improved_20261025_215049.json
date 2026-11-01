@@ -1,0 +1,222 @@
+{
+  "preset": "improved",
+  "timestamp": "2026-10-25T21:50:49.101789",
+  "total_questions": 10,
+  "metrics": {
+    "accuracy": 0.4,
+    "correct_answers_count": 4,
+    "hit_at_k_rate": 0.7,
+    "hallucinations_count": 2,
+    "no_answer_refusal_rate": 0.33,
+    "avg_response_time_ms": 2090.96,
+    "p95_response_time_ms": 9421.23
+  },
+  "target_check": {
+    "accuracy_target_met": false,
+    "no_answer_target_met": false,
+    "overall_passed": false
+  },
+  "detailed_results": [
+    {
+      "id": 1,
+      "type": "exact",
+      "question": "Как маркируется сырьё, находящееся в карантине?",
+      "expected_source": "Контроль качества сырья",
+      "actual_sources": [
+        "Контроль качества сырья",
+        "Управление отклонениями"
+      ],
+      "answer": "Жёлтая этикетка «КАРАНТИН» с указанием даты поступления и номера серии.",
+      "refused": false,
+      "response_time_ms": 1255.02,
+      "evaluation": {
+        "is_correct": true,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Найден источник и факты (совпадение 71%)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 2,
+      "type": "exact",
+      "question": "Какие условия требуются для долгосрочных исследований стабильности?",
+      "expected_source": "Исследование стабильности",
+      "actual_sources": [
+        "Исследование стабильности"
+      ],
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "refused": true,
+      "response_time_ms": 584.71,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Ложный отказ (информация есть в базе)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 3,
+      "type": "exact",
+      "question": "Какой срок даётся на расследование критического отклонения?",
+      "expected_source": "Управление отклонениями",
+      "actual_sources": [
+        "Управление отклонениями",
+        "Система управления качеством"
+      ],
+      "answer": "Не более 30 календарных дней.",
+      "refused": false,
+      "response_time_ms": 911.8,
+      "evaluation": {
+        "is_correct": true,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Найден источник и факты (совпадение 100%)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 4,
+      "type": "exact",
+      "question": "Что включает в себя квалификация монтажа оборудования (IQ)?",
+      "expected_source": "Валидация оборудования",
+      "actual_sources": [
+        "Исследование стабильности",
+        "Валидация оборудования"
+      ],
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "refused": true,
+      "response_time_ms": 846.78,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Ложный отказ (информация есть в базе)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 5,
+      "type": "multi_hop",
+      "question": "При входном контроле выявили, что содержание действующего вещества в сырье отклонилось на 3% от нормы. Какое решение должно быть принято?",
+      "expected_source": "Контроль качества сырья + Управление отклонениями",
+      "actual_sources": [
+        "Исследование стабильности",
+        "Контроль качества сырья",
+        "Управление отклонениями"
+      ],
+      "answer": "Отклонено (красная этикетка).",
+      "refused": false,
+      "response_time_ms": 722.52,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Неверный ответ или не найдены ключевые факты"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 6,
+      "type": "no_answer",
+      "question": "Как часто нужно проводить ре-квалификацию таблеточного пресса?",
+      "expected_source": null,
+      "actual_sources": [
+        "Исследование стабильности",
+        "Система управления качеством",
+        "Валидация оборудования"
+      ],
+      "answer": "Планово ре‑квалификация таблеточного пресса проводится каждые **2–3 года**, а внепланово – после ремонта, перемещения или длительного простоя.",
+      "refused": false,
+      "response_time_ms": 512.19,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": true,
+        "hit_at_k": false,
+        "reason": "Галлюцинация (должен был отказать)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 7,
+      "type": "no_answer",
+      "question": "Какая максимальная температура допускается при хранении инъекционных растворов?",
+      "expected_source": null,
+      "actual_sources": [
+        "Исследование стабильности",
+        "Управление отклонениями",
+        "Валидация оборудования"
+      ],
+      "answer": "Максимальная температура, допускаемая при хранении, составляет 27 °C.",
+      "refused": false,
+      "response_time_ms": 1305.46,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": true,
+        "hit_at_k": false,
+        "reason": "Галлюцинация (должен был отказать)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 8,
+      "type": "exact",
+      "question": "Какие методы анализа корневых причин отклонений предусмотрены процедурой?",
+      "expected_source": "Управление отклонениями",
+      "actual_sources": [
+        "Управление отклонениями",
+        "Система управления качеством"
+      ],
+      "answer": "Методы анализа корневых причин отклонений, предусмотренные процедурой, включают:\n\n- диаграмму Исикавы (рыбья кость)  \n- метод «5 почему»  \n- FMEA‑анализ (анализ видов и последствий отказов)",
+      "refused": false,
+      "response_time_ms": 731.24,
+      "evaluation": {
+        "is_correct": false,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Неверный ответ или не найдены ключевые факты"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 9,
+      "type": "multi_hop",
+      "question": "Какой порядок действий при обнаружении критического отклонения в температурном режиме хранения?",
+      "expected_source": "Управление отклонениями + Контроль качества сырья",
+      "actual_sources": [
+        "Управление отклонениями"
+      ],
+      "answer": "При обнаружении критического отклонения в температурном режиме хранения необходимо:\n\n1. Немедленно приостановить процесс (если применимо).  \n2. Изолировать подозрительную продукцию.  \n3. Уведомить неп...",
+      "refused": false,
+      "response_time_ms": 4618.69,
+      "evaluation": {
+        "is_correct": true,
+        "is_hallucination": false,
+        "hit_at_k": true,
+        "reason": "Найден источник и факты (совпадение 43%)"
+      },
+      "manual_mark": ""
+    },
+    {
+      "id": 10,
+      "type": "no_answer",
+      "question": "Какой срок хранения протоколов валидации аналитических методик?",
+      "expected_source": null,
+      "actual_sources": [
+        "Контроль качества сырья",
+        "Валидация оборудования"
+      ],
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "refused": true,
+      "response_time_ms": 9421.23,
+      "evaluation": {
+        "is_correct": true,
+        "is_hallucination": false,
+        "hit_at_k": false,
+        "reason": "Корректный отказ"
+      },
+      "manual_mark": ""
+    }
+  ]
+}

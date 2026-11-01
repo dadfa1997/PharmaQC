@@ -1,0 +1,420 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 02 · КРИТЕРИИ
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Требования заранее связаны с измеримыми проверками
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '03'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: h1
+  elementType: text
+  bounds:
+  - 56
+  - 143
+  - 120
+  - 24
+  content:
+    text: ГРУППА
+    style: $label
+- elementId: h2
+  elementType: text
+  bounds:
+  - 190
+  - 143
+  - 390
+  - 24
+  content:
+    text: ЧТО ПРОВЕРЯЕМ
+    style: $label
+- elementId: h3
+  elementType: text
+  bounds:
+  - 602
+  - 143
+  - 300
+  - 24
+  content:
+    text: КАК / ЦЕЛЬ
+    style: $label
+- elementId: top
+  elementType: line
+  bounds:
+  - 56
+  - 174
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $ink
+- elementId: a0
+  elementType: text
+  bounds:
+  - 56
+  - 190
+  - 120
+  - 26
+  content:
+    text: FR
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b0
+  elementType: text
+  bounds:
+  - 190
+  - 190
+  - 390
+  - 30
+  content:
+    text: Ответ, источники, отказ, multi-hop
+    fontSize: 16
+    color: $ink
+- elementId: c0
+  elementType: text
+  bounds:
+  - 602
+  - 190
+  - 300
+  - 30
+  content:
+    text: 10 сценариев + HTTP
+    fontSize: 16
+    color: $ink
+- elementId: r0
+  elementType: line
+  bounds:
+  - 56
+  - 225
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: a1
+  elementType: text
+  bounds:
+  - 56
+  - 236
+  - 120
+  - 26
+  content:
+    text: QR-01
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b1
+  elementType: text
+  bounds:
+  - 190
+  - 236
+  - 390
+  - 30
+  content:
+    text: Accuracy
+    fontSize: 16
+    color: $ink
+- elementId: c1
+  elementType: text
+  bounds:
+  - 602
+  - 236
+  - 300
+  - 30
+  content:
+    text: ≥ 0.80
+    fontSize: 16
+    color: $ink
+- elementId: r1
+  elementType: line
+  bounds:
+  - 56
+  - 271
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: a2
+  elementType: text
+  bounds:
+  - 56
+  - 282
+  - 120
+  - 26
+  content:
+    text: QR-02
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b2
+  elementType: text
+  bounds:
+  - 190
+  - 282
+  - 390
+  - 30
+  content:
+    text: Hit@k
+    fontSize: 16
+    color: $ink
+- elementId: c2
+  elementType: text
+  bounds:
+  - 602
+  - 282
+  - 300
+  - 30
+  content:
+    text: ≥ 0.90
+    fontSize: 16
+    color: $ink
+- elementId: r2
+  elementType: line
+  bounds:
+  - 56
+  - 317
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: a3
+  elementType: text
+  bounds:
+  - 56
+  - 328
+  - 120
+  - 26
+  content:
+    text: QR-03
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b3
+  elementType: text
+  bounds:
+  - 190
+  - 328
+  - 390
+  - 30
+  content:
+    text: Галлюцинации
+    fontSize: 16
+    color: $ink
+- elementId: c3
+  elementType: text
+  bounds:
+  - 602
+  - 328
+  - 300
+  - 30
+  content:
+    text: '0'
+    fontSize: 16
+    color: $ink
+- elementId: r3
+  elementType: line
+  bounds:
+  - 56
+  - 363
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: a4
+  elementType: text
+  bounds:
+  - 56
+  - 374
+  - 120
+  - 26
+  content:
+    text: QR-06
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b4
+  elementType: text
+  bounds:
+  - 190
+  - 374
+  - 390
+  - 30
+  content:
+    text: p95 local
+    fontSize: 16
+    color: $ink
+- elementId: c4
+  elementType: text
+  bounds:
+  - 602
+  - 374
+  - 300
+  - 30
+  content:
+    text: < 10 000 мс
+    fontSize: 16
+    color: $ink
+- elementId: r4
+  elementType: line
+  bounds:
+  - 56
+  - 409
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: a5
+  elementType: text
+  bounds:
+  - 56
+  - 420
+  - 120
+  - 26
+  content:
+    text: SR
+    fontSize: 15
+    color: $green
+    bold: true
+- elementId: b5
+  elementType: text
+  bounds:
+  - 190
+  - 420
+  - 390
+  - 30
+  content:
+    text: Секреты, ввод, сбои, инъекции
+    fontSize: 16
+    color: $ink
+- elementId: c5
+  elementType: text
+  bounds:
+  - 602
+  - 420
+  - 300
+  - 30
+  content:
+    text: автотесты + просмотр логов
+    fontSize: 16
+    color: $ink
+- elementId: r5
+  elementType: line
+  bounds:
+  - 56
+  - 455
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: note
+  elementType: text
+  bounds:
+  - 56
+  - 477
+  - 800
+  - 22
+  content:
+    text: 'Полная таблица FR / QR / SR и статусы: docs/requirements.md'
+    style: $small

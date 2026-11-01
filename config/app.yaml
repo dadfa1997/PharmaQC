@@ -1,0 +1,88 @@
+# PharmaQC — единая конфигурация (все скрипты, сервис и оценка читают только этот файл).
+# Пресеты из config/presets/*.yaml перекрывают отдельные параметры (см. scripts/evaluate.py --preset).
+version: "3.0.0"
+
+# local — воспроизводимый BM25 RAG без внешних API (по умолчанию);
+# groq — векторный RAG с ChromaDB и Groq LLM. Можно переопределить PHARMAQC_ENGINE.
+runtime:
+  engine: "local"
+
+local:
+  strategy: "multi_query"    # single_query — baseline; multi_query — итоговая версия
+  answer_chunks: 3
+  object_guard: true
+
+paths:
+  raw_data_dir: "data/raw"
+  documents_metadata: "data/documents_metadata.json"
+  prepared_jsonl: "data/prepared/dataset.jsonl"
+  chunks_jsonl: "data/chunks/chunks.jsonl"
+  embeddings_jsonl: "data/embeddings/embeddings.jsonl"
+  validation_file: "data/vector_store/validation.json"
+  search_results_file: "data/vector_store/search_results.json"
+  manifest_file: "data/vector_store/manifest.json"
+  test_questions: "data/test_questions.json"
+  eval_dir: "data/eval"
+
+preprocessing:
+  min_text_length: 10
+  normalize_unicode: true
+
+chunking:
+  strategy: "structure"      # нумерованные пункты регламента + заголовок раздела в каждом чанке
+  chunk_size: 400            # максимум символов в чанке (пункт длиннее режется по предложениям)
+  chunk_overlap: 80          # перекрытие только внутри длинного пункта
+  min_chunk_size: 50
+
+embedding:
+  model_name: "intfloat/multilingual-e5-base"
+  dimensions: 768
+  batch_size: 32
+  device: "cpu"
+  query_prefix: "query: "
+  passage_prefix: "passage: "
+
+vector_store:
+  type: "chromadb"
+  collection_name: "rag_documents"
+  distance_metric: "cosine"
+  dimensions: 768
+  persist_directory: "data/vector_store/chroma_db"
+  recreate_collection: true
+
+indexing:
+  batch_size: 100
+
+search:
+  test_queries_count: 3
+  top_k: 5
+
+retrieval:
+  top_k: 5
+  # Грубый предфильтр. Оценки e5 лежат в узком диапазоне (≈0.78–0.90), поэтому порог сам по себе
+  # не отличает релевантное от нерелевантного: решение об отказе принимает проверка опоры в
+  # контексте (см. src/rag.py). Значение проверять скриптом scripts/analyze_threshold.py.
+  similarity_threshold: 0.75
+
+llm:
+  provider: "groq"
+  model: "openai/gpt-oss-20b"
+  temperature: 0.0
+  max_tokens: 2000           # у рассуждающей модели часть токенов уходит на reasoning
+  reasoning_effort: "low"    # low | medium | high; null — не передавать
+  json_mode: true            # response_format = json_object
+  timeout: 30
+  max_retries: 3
+  retry_delay: 5
+
+prompt:
+  system_prompt_file: "config/prompts/system.txt"
+
+api:
+  max_question_length: 1000
+  # Список разрешённых origin для CORS. Пусто — CORS выключен. Можно задать через CORS_ORIGINS=a,b
+  cors_origins: []
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -1,0 +1,272 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 05 · ДОРАБОТКА
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Улучшение адресует каждый тип ошибки, а не только top-k
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '06'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: n0
+  elementType: text
+  bounds:
+  - 56
+  - 148
+  - 45
+  - 26
+  content:
+    text: '01'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t0
+  elementType: text
+  bounds:
+  - 116
+  - 148
+  - 230
+  - 28
+  content:
+    text: Мультизапросы
+    fontSize: 20
+    color: $ink
+    bold: true
+- elementId: d0
+  elementType: text
+  bounds:
+  - 370
+  - 148
+  - 534
+  - 48
+  content:
+    text: Классификация, действия и сроки ищутся как самостоятельные аспекты.
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.3
+- elementId: l0
+  elementType: line
+  bounds:
+  - 56
+  - 209
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n1
+  elementType: text
+  bounds:
+  - 56
+  - 227
+  - 45
+  - 26
+  content:
+    text: '02'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t1
+  elementType: text
+  bounds:
+  - 116
+  - 227
+  - 230
+  - 28
+  content:
+    text: Object guard
+    fontSize: 20
+    color: $ink
+    bold: true
+- elementId: d1
+  elementType: text
+  bounds:
+  - 370
+  - 227
+  - 534
+  - 48
+  content:
+    text: Если объект вопроса отсутствует в корпусе, слабое совпадение не становится ответом.
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.3
+- elementId: l1
+  elementType: line
+  bounds:
+  - 56
+  - 288
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n2
+  elementType: text
+  bounds:
+  - 56
+  - 306
+  - 45
+  - 26
+  content:
+    text: '03'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t2
+  elementType: text
+  bounds:
+  - 116
+  - 306
+  - 230
+  - 28
+  content:
+    text: General rule
+    fontSize: 20
+    color: $ink
+    bold: true
+- elementId: d2
+  elementType: text
+  bounds:
+  - 370
+  - 306
+  - 534
+  - 48
+  content:
+    text: Общее правило сопровождается оговоркой и флагом partial=true.
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.3
+- elementId: l2
+  elementType: line
+  bounds:
+  - 56
+  - 367
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: n3
+  elementType: text
+  bounds:
+  - 56
+  - 385
+  - 45
+  - 26
+  content:
+    text: '04'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t3
+  elementType: text
+  bounds:
+  - 116
+  - 385
+  - 230
+  - 28
+  content:
+    text: Числовой допуск
+    fontSize: 20
+    color: $ink
+    bold: true
+- elementId: d3
+  elementType: text
+  bounds:
+  - 370
+  - 385
+  - 534
+  - 48
+  content:
+    text: 3% сравнивается с явно найденным ±2%; вывод отделён от цитаты.
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.3
+- elementId: l3
+  elementType: line
+  bounds:
+  - 56
+  - 446
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line

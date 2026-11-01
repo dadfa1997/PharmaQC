@@ -1,0 +1,138 @@
+pageType: content
+background:
+  type: solid
+  color: $dark
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 34
+  - 600
+  - 20
+  content:
+    text: ВЫВОД
+    fontSize: 12
+    color: '#A8C7BA'
+    bold: true
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 76
+  - 800
+  - 72
+  content:
+    text: 'PharmaQC готов как воспроизводимый
+
+      дипломный RAG-сервис'
+    fontSize: 31
+    color: $white
+    bold: true
+    lineHeight: 1.15
+- elementId: metric
+  elementType: text
+  bounds:
+  - 56
+  - 190
+  - 300
+  - 70
+  content:
+    text: 0.50 → 1.00
+    fontSize: 43
+    color: '#F0A477'
+    bold: true
+- elementId: metriclab
+  elementType: text
+  bounds:
+  - 58
+  - 255
+  - 350
+  - 24
+  content:
+    text: accuracy на фиксированном наборе
+    fontSize: 15
+    color: '#A8C7BA'
+- elementId: divider
+  elementType: line
+  bounds:
+  - 500
+  - 182
+  - 1
+  - 118
+  viewBox:
+  - 1
+  - 118
+  points: 0,0 1,118
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: '#557A6C'
+- elementId: done
+  elementType: text
+  bounds:
+  - 548
+  - 184
+  - 356
+  - 110
+  content:
+    text: '66 тестов · 4 HTTP PASS
+
+      10/10 improved · 0 галлюцинаций
+
+      README · Docker · demo · отчёт'
+    fontSize: 18
+    color: '#E4ECE7'
+    lineHeight: 1.5
+- elementId: bottom
+  elementType: line
+  bounds:
+  - 56
+  - 341
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: '#557A6C'
+- elementId: limits
+  elementType: text
+  bounds:
+  - 56
+  - 368
+  - 160
+  - 22
+  content:
+    text: ОГРАНИЧЕНИЯ
+    fontSize: 12
+    color: '#A8C7BA'
+    bold: true
+- elementId: limitst
+  elementType: text
+  bounds:
+  - 224
+  - 365
+  - 680
+  - 58
+  content:
+    text: 5 учебных регламентов и 10 вопросов. Нужен независимый набор 50–100 вопросов; Groq и Docker проверяются отдельно.
+    fontSize: 16
+    color: '#E4ECE7'
+    lineHeight: 1.35
+- elementId: next
+  elementType: text
+  bounds:
+  - 56
+  - 460
+  - 848
+  - 28
+  content:
+    text: 'Следующий шаг: hybrid retrieval + reranking, экспертная разметка и контроль версий документов.'
+    fontSize: 15
+    color: '#A8C7BA'

@@ -1,0 +1,52 @@
+version: v2
+title: PharmaQC — дипломный проект
+size:
+- 960
+- 540
+theme:
+  colors:
+    bg: '#F5F6F2'
+    ink: '#18332E'
+    muted: '#64736D'
+    green: '#0D6B57'
+    orange: '#D87543'
+    line: '#C9D2CB'
+    pale: '#E4ECE7'
+    white: '#FBFCFA'
+    dark: '#102923'
+  textStyles:
+    title:
+      fontSize: 30
+      fontFamily: Arial
+      bold: true
+      color: $ink
+      lineHeight: 1.12
+    body:
+      fontSize: 17
+      fontFamily: Arial
+      color: $ink
+      lineHeight: 1.35
+    small:
+      fontSize: 12
+      fontFamily: Arial
+      color: $muted
+      lineHeight: 1.25
+    label:
+      fontSize: 12
+      fontFamily: Arial
+      bold: true
+      color: $green
+      letterSpacing: 1.2
+pages:
+- pages/01_cover.page
+- pages/02_problem.page
+- pages/03_requirements.page
+- pages/04_baseline.page
+- pages/05_architecture.page
+- pages/06_improvements.page
+- pages/07_method.page
+- pages/08_results.page
+- pages/09_case.page
+- pages/10_reliability.page
+- pages/11_delivery.page
+- pages/12_final.page

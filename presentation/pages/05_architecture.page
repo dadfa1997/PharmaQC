@@ -1,0 +1,508 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 04 · АРХИТЕКТУРА
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Два контура используют один сервисный слой и один HTTP-контракт
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '05'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: api
+  elementType: shape
+  bounds:
+  - 56
+  - 145
+  - 150
+  - 56
+  shapeName: rect
+  fill:
+    type: solid
+    color: $ink
+- elementId: apit
+  elementType: text
+  bounds:
+  - 70
+  - 161
+  - 122
+  - 24
+  content:
+    text: FastAPI + Pydantic
+    fontSize: 16
+    color: $white
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: local
+  elementType: text
+  bounds:
+  - 252
+  - 137
+  - 180
+  - 22
+  content:
+    text: LOCAL · без ключей
+    style: $label
+- elementId: a1
+  elementType: line
+  bounds:
+  - 208
+  - 173
+  - 42
+  - 1
+  viewBox:
+  - 42
+  - 1
+  points: 0,0 42,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: ln0
+  elementType: shape
+  bounds:
+  - 252
+  - 166
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $green
+- elementId: lnt0
+  elementType: text
+  bounds:
+  - 260
+  - 178
+  - 122
+  - 42
+  content:
+    text: 'BM25
+
+      retrieval'
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: la0
+  elementType: line
+  bounds:
+  - 392
+  - 199
+  - 22
+  - 1
+  viewBox:
+  - 22
+  - 1
+  points: 0,0 22,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: ln1
+  elementType: shape
+  bounds:
+  - 414
+  - 166
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $green
+- elementId: lnt1
+  elementType: text
+  bounds:
+  - 422
+  - 178
+  - 122
+  - 42
+  content:
+    text: 'multi-query
+
+      + object guard'
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: la1
+  elementType: line
+  bounds:
+  - 554
+  - 199
+  - 22
+  - 1
+  viewBox:
+  - 22
+  - 1
+  points: 0,0 22,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: ln2
+  elementType: shape
+  bounds:
+  - 576
+  - 166
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $pale
+  border:
+    style: solid
+    width: 1
+    color: $green
+- elementId: lnt2
+  elementType: text
+  bounds:
+  - 584
+  - 178
+  - 122
+  - 42
+  content:
+    text: 'Дословный
+
+      ответ'
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: a1
+  elementType: line
+  bounds:
+  - 208
+  - 173
+  - 42
+  - 1
+  viewBox:
+  - 42
+  - 1
+  points: 0,0 42,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: a2
+  elementType: line
+  bounds:
+  - 208
+  - 173
+  - 42
+  - 152
+  viewBox:
+  - 42
+  - 152
+  points: 0,0 42,152
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $green
+- elementId: groq
+  elementType: text
+  bounds:
+  - 252
+  - 258
+  - 180
+  - 22
+  content:
+    text: GROQ · генеративный
+    style: $label
+- elementId: gn0
+  elementType: shape
+  bounds:
+  - 252
+  - 287
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $white
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: gnt0
+  elementType: text
+  bounds:
+  - 260
+  - 299
+  - 122
+  - 42
+  content:
+    text: e5 + ChromaDB
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: ga0
+  elementType: line
+  bounds:
+  - 392
+  - 320
+  - 22
+  - 1
+  viewBox:
+  - 22
+  - 1
+  points: 0,0 22,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $muted
+  arrow:
+  - null
+  - arrow
+- elementId: gn1
+  elementType: shape
+  bounds:
+  - 414
+  - 287
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $white
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: gnt1
+  elementType: text
+  bounds:
+  - 422
+  - 299
+  - 122
+  - 42
+  content:
+    text: 'Groq JSON
+
+      + retry'
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: ga1
+  elementType: line
+  bounds:
+  - 554
+  - 320
+  - 22
+  - 1
+  viewBox:
+  - 22
+  - 1
+  points: 0,0 22,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $muted
+  arrow:
+  - null
+  - arrow
+- elementId: gn2
+  elementType: shape
+  bounds:
+  - 576
+  - 287
+  - 138
+  - 66
+  shapeName: rect
+  fill:
+    type: solid
+    color: $white
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: gnt2
+  elementType: text
+  bounds:
+  - 584
+  - 299
+  - 122
+  - 42
+  content:
+    text: 'Проверка
+
+      цитаты'
+    fontSize: 15
+    color: $ink
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: out1
+  elementType: line
+  bounds:
+  - 716
+  - 199
+  - 54
+  - 1
+  viewBox:
+  - 54
+  - 1
+  points: 0,0 54,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: out2
+  elementType: line
+  bounds:
+  - 716
+  - 320
+  - 54
+  - 1
+  viewBox:
+  - 54
+  - 1
+  points: 0,0 54,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $muted
+  arrow:
+  - null
+  - arrow
+- elementId: response
+  elementType: shape
+  bounds:
+  - 772
+  - 217
+  - 132
+  - 78
+  shapeName: rect
+  fill:
+    type: solid
+    color: $green
+- elementId: respt
+  elementType: text
+  bounds:
+  - 782
+  - 231
+  - 112
+  - 48
+  content:
+    text: 'Ответ
+
+      + источники'
+    fontSize: 17
+    color: $white
+    bold: true
+    align:
+    - center
+    - middle
+- elementId: note
+  elementType: text
+  bounds:
+  - 56
+  - 421
+  - 848
+  - 50
+  content:
+    text: Local выбран для воспроизводимой оценки. Groq сохранён как отдельный режим; его метрики не смешиваются с локальными.
+    fontSize: 15
+    color: $muted
+    lineHeight: 1.35

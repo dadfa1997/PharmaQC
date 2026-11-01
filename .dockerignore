@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+
+# Virtual environment
+.venv
+venv
+env
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+*.egg-info
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Данные (монтируются через volumes)
+data/vector_store/chroma_db
+data/eval
+data/embeddings
+
+# Секреты
+.env
+*.key
+
+# Документация (не нужна в образе)
+docs
+*.md
+!README.md
+
+# Тесты
+tests

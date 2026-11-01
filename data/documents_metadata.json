@@ -1,0 +1,32 @@
+{
+  "raw_materials_qc.txt": {
+    "document_name": "Контроль качества сырья",
+    "category": "quality_control",
+    "version": "2.1",
+    "date": "2024-03-15"
+  },
+  "stability_testing.txt": {
+    "document_name": "Исследование стабильности",
+    "category": "stability",
+    "version": "3.0",
+    "date": "2024-06-01"
+  },
+  "deviation_management.txt": {
+    "document_name": "Управление отклонениями",
+    "category": "deviations",
+    "version": "2.5",
+    "date": "2024-09-10"
+  },
+  "equipment_validation.txt": {
+    "document_name": "Валидация оборудования",
+    "category": "validation",
+    "version": "1.8",
+    "date": "2024-11-20"
+  },
+  "quality_system.txt": {
+    "document_name": "Система управления качеством",
+    "category": "quality_management",
+    "version": "1.3",
+    "date": "2025-01-05"
+  }
+}

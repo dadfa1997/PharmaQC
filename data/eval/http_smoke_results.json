@@ -1,0 +1,54 @@
+{
+  "timestamp_utc": "2026-11-01T17:12:17.073928+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "engine": "local",
+  "passed": true,
+  "scenarios": [
+    {
+      "id": "health",
+      "method": "GET",
+      "path": "/health",
+      "expected": 200,
+      "status": "PASS",
+      "http_status": 200,
+      "answer": null,
+      "sources": null,
+      "ready": true
+    },
+    {
+      "id": "normal",
+      "method": "POST",
+      "path": "/api/v1/ask",
+      "expected": 200,
+      "status": "PASS",
+      "http_status": 200,
+      "answer": "2.3. Маркировка карантинного сырья: жёлтая этикетка «КАРАНТИН» с указанием даты поступления и номера серии.",
+      "sources": [
+        "Контроль качества сырья"
+      ],
+      "ready": null
+    },
+    {
+      "id": "no_answer",
+      "method": "POST",
+      "path": "/api/v1/ask",
+      "expected": 200,
+      "status": "PASS",
+      "http_status": 200,
+      "answer": "К сожалению, в доступных документах нет информации для ответа на этот вопрос.",
+      "sources": [],
+      "ready": null
+    },
+    {
+      "id": "validation",
+      "method": "POST",
+      "path": "/api/v1/ask",
+      "expected": 422,
+      "status": "PASS",
+      "http_status": 422,
+      "answer": null,
+      "sources": null,
+      "ready": null
+    }
+  ]
+}

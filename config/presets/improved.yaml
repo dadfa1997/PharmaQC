@@ -1,0 +1,8 @@
+name: "improved"
+description: "Итоговая версия: мультизапросы, проверка объекта и дословные источники"
+retrieval:
+  top_k: 5
+local:
+  strategy: "multi_query"
+  answer_chunks: 3
+  object_guard: true

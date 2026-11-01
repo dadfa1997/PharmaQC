@@ -1,0 +1,287 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 06 · МЕТОД ОЦЕНКИ
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Версии сравниваются на одном корпусе и одних сценариях
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '07'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: v0
+  elementType: text
+  bounds:
+  - 56
+  - 151
+  - 160
+  - 50
+  content:
+    text: '61'
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: l0
+  elementType: text
+  bounds:
+  - 56
+  - 202
+  - 160
+  - 26
+  content:
+    text: чанк
+    fontSize: 15
+    color: $muted
+- elementId: v1
+  elementType: text
+  bounds:
+  - 252
+  - 151
+  - 160
+  - 50
+  content:
+    text: '10'
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: l1
+  elementType: text
+  bounds:
+  - 252
+  - 202
+  - 160
+  - 26
+  content:
+    text: вопросов
+    fontSize: 15
+    color: $muted
+- elementId: v2
+  elementType: text
+  bounds:
+  - 448
+  - 151
+  - 160
+  - 50
+  content:
+    text: ×3
+    fontSize: 38
+    color: $green
+    bold: true
+- elementId: l2
+  elementType: text
+  bounds:
+  - 448
+  - 202
+  - 160
+  - 26
+  content:
+    text: прогона
+    fontSize: 15
+    color: $muted
+- elementId: divider
+  elementType: line
+  bounds:
+  - 632
+  - 148
+  - 1
+  - 86
+  viewBox:
+  - 1
+  - 86
+  points: 0,0 1,86
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: fixed
+  elementType: text
+  bounds:
+  - 676
+  - 153
+  - 228
+  - 70
+  content:
+    text: 'Один код оценки
+
+      Одинаковые обязательные факты'
+    fontSize: 17
+    color: $ink
+    lineHeight: 1.35
+- elementId: types
+  elementType: text
+  bounds:
+  - 56
+  - 275
+  - 220
+  - 24
+  content:
+    text: СОСТАВ НАБОРА
+    style: $label
+- elementId: type0
+  elementType: shape
+  bounds:
+  - 56
+  - 314
+  - 360
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $green
+- elementId: typet0
+  elementType: text
+  bounds:
+  - 63
+  - 322
+  - 346
+  - 20
+  content:
+    text: exact · 5
+    fontSize: 13
+    color: $white
+    bold: true
+- elementId: type1
+  elementType: shape
+  bounds:
+  - 424
+  - 314
+  - 144
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $orange
+- elementId: typet1
+  elementType: text
+  bounds:
+  - 431
+  - 322
+  - 130
+  - 20
+  content:
+    text: multi_hop · 2
+    fontSize: 13
+    color: $white
+    bold: true
+- elementId: type2
+  elementType: shape
+  bounds:
+  - 576
+  - 314
+  - 144
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: '#8A9B93'
+- elementId: typet2
+  elementType: text
+  bounds:
+  - 583
+  - 322
+  - 130
+  - 20
+  content:
+    text: partial · 2
+    fontSize: 13
+    color: $white
+    bold: true
+- elementId: type3
+  elementType: shape
+  bounds:
+  - 728
+  - 314
+  - 72
+  - 34
+  shapeName: rect
+  fill:
+    type: solid
+    color: $ink
+- elementId: typet3
+  elementType: text
+  bounds:
+  - 735
+  - 322
+  - 58
+  - 20
+  content:
+    text: no_answer · 1
+    fontSize: 13
+    color: $white
+    bold: true
+- elementId: rules
+  elementType: text
+  bounds:
+  - 56
+  - 386
+  - 848
+  - 58
+  content:
+    text: exact / multi_hop → обязательные факты; partial → оговорка или осторожный отказ; no_answer → только отказ. Latency измерена in-process, без сети.
+    fontSize: 16
+    color: $ink
+    lineHeight: 1.35
+- elementId: source
+  elementType: text
+  bounds:
+  - 56
+  - 469
+  - 848
+  - 20
+  content:
+    text: 'Источник: data/test_questions.json · scripts/evaluate.py'
+    style: $small

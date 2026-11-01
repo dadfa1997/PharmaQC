@@ -1,0 +1,51 @@
+{
+  "preset": "improved",
+  "runs": 3,
+  "accuracy_mean": 1.0,
+  "accuracy_min": 1.0,
+  "accuracy_max": 1.0,
+  "target_accuracy": 0.8,
+  "target_p95_ms": 10000,
+  "targets_met": true,
+  "per_run": [
+    {
+      "questions": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "hit_at_k": 1.0,
+      "correct_refusals_on_no_answer": "1/1",
+      "hallucinations": 0,
+      "false_refusals": 0,
+      "cautious_refusals": 0,
+      "llm_errors": 0,
+      "avg_latency_ms": 0.5,
+      "p95_latency_ms": 1.2
+    },
+    {
+      "questions": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "hit_at_k": 1.0,
+      "correct_refusals_on_no_answer": "1/1",
+      "hallucinations": 0,
+      "false_refusals": 0,
+      "cautious_refusals": 0,
+      "llm_errors": 0,
+      "avg_latency_ms": 0.4,
+      "p95_latency_ms": 0.8
+    },
+    {
+      "questions": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "hit_at_k": 1.0,
+      "correct_refusals_on_no_answer": "1/1",
+      "hallucinations": 0,
+      "false_refusals": 0,
+      "cautious_refusals": 0,
+      "llm_errors": 0,
+      "avg_latency_ms": 0.4,
+      "p95_latency_ms": 0.8
+    }
+  ]
+}

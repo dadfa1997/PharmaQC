@@ -1,0 +1,342 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 09 · НАДЁЖНОСТЬ
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Ошибка входа или внешней зависимости не превращается в обычный ответ
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: '10'
+    style: $small
+    align:
+    - right
+    - top
+- elementId: code0
+  elementType: text
+  bounds:
+  - 56
+  - 150
+  - 74
+  - 30
+  content:
+    text: '422'
+    fontSize: 23
+    color: $orange
+    bold: true
+- elementId: desc0
+  elementType: text
+  bounds:
+  - 150
+  - 150
+  - 280
+  - 26
+  content:
+    text: Пустой / длинный вопрос
+    fontSize: 17
+    color: $ink
+    bold: true
+- elementId: act0
+  elementType: text
+  bounds:
+  - 452
+  - 150
+  - 220
+  - 26
+  content:
+    text: Pydantic
+    fontSize: 15
+    color: $muted
+- elementId: el0
+  elementType: line
+  bounds:
+  - 56
+  - 195
+  - 616
+  - 1
+  viewBox:
+  - 616
+  - 1
+  points: 0,0 616,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: code1
+  elementType: text
+  bounds:
+  - 56
+  - 216
+  - 74
+  - 30
+  content:
+    text: '500'
+    fontSize: 23
+    color: $orange
+    bold: true
+- elementId: desc1
+  elementType: text
+  bounds:
+  - 150
+  - 216
+  - 280
+  - 26
+  content:
+    text: Внутренняя ошибка
+    fontSize: 17
+    color: $ink
+    bold: true
+- elementId: act1
+  elementType: text
+  bounds:
+  - 452
+  - 216
+  - 220
+  - 26
+  content:
+    text: без деталей клиенту
+    fontSize: 15
+    color: $muted
+- elementId: el1
+  elementType: line
+  bounds:
+  - 56
+  - 261
+  - 616
+  - 1
+  viewBox:
+  - 616
+  - 1
+  points: 0,0 616,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: code2
+  elementType: text
+  bounds:
+  - 56
+  - 282
+  - 74
+  - 30
+  content:
+    text: '502'
+    fontSize: 23
+    color: $orange
+    bold: true
+- elementId: desc2
+  elementType: text
+  bounds:
+  - 150
+  - 282
+  - 280
+  - 26
+  content:
+    text: Некорректный JSON LLM
+    fontSize: 17
+    color: $ink
+    bold: true
+- elementId: act2
+  elementType: text
+  bounds:
+  - 452
+  - 282
+  - 220
+  - 26
+  content:
+    text: повторы, затем отказ
+    fontSize: 15
+    color: $muted
+- elementId: el2
+  elementType: line
+  bounds:
+  - 56
+  - 327
+  - 616
+  - 1
+  viewBox:
+  - 616
+  - 1
+  points: 0,0 616,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: code3
+  elementType: text
+  bounds:
+  - 56
+  - 348
+  - 74
+  - 30
+  content:
+    text: '503'
+    fontSize: 23
+    color: $orange
+    bold: true
+- elementId: desc3
+  elementType: text
+  bounds:
+  - 150
+  - 348
+  - 280
+  - 26
+  content:
+    text: LLM недоступна
+    fontSize: 17
+    color: $ink
+    bold: true
+- elementId: act3
+  elementType: text
+  bounds:
+  - 452
+  - 348
+  - 220
+  - 26
+  content:
+    text: retry + backoff
+    fontSize: 15
+    color: $muted
+- elementId: el3
+  elementType: line
+  bounds:
+  - 56
+  - 393
+  - 616
+  - 1
+  viewBox:
+  - 616
+  - 1
+  points: 0,0 616,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: divider
+  elementType: line
+  bounds:
+  - 716
+  - 148
+  - 1
+  - 278
+  viewBox:
+  - 1
+  - 278
+  points: 0,0 1,278
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: sec
+  elementType: text
+  bounds:
+  - 758
+  - 150
+  - 146
+  - 24
+  content:
+    text: БЕЗОПАСНОСТЬ
+    style: $label
+- elementId: s0
+  elementType: text
+  bounds:
+  - 758
+  - 198
+  - 146
+  - 46
+  content:
+    text: Нет текста вопроса в логах
+    fontSize: 14
+    color: $ink
+    lineHeight: 1.25
+- elementId: s1
+  elementType: text
+  bounds:
+  - 758
+  - 254
+  - 146
+  - 46
+  content:
+    text: Секреты только в окружении
+    fontSize: 14
+    color: $ink
+    lineHeight: 1.25
+- elementId: s2
+  elementType: text
+  bounds:
+  - 758
+  - 310
+  - 146
+  - 46
+  content:
+    text: Цитата проверяется в контексте
+    fontSize: 14
+    color: $ink
+    lineHeight: 1.25
+- elementId: s3
+  elementType: text
+  bounds:
+  - 758
+  - 366
+  - 146
+  - 46
+  content:
+    text: Служебные теги удаляются
+    fontSize: 14
+    color: $ink
+    lineHeight: 1.25

@@ -1,0 +1,253 @@
+pageType: content
+background:
+  type: solid
+  color: $bg
+elements:
+- elementId: section
+  elementType: text
+  bounds:
+  - 56
+  - 24
+  - 650
+  - 20
+  content:
+    text: 08 · СЦЕНАРИЙ Q9
+    style: $label
+- elementId: title
+  elementType: text
+  bounds:
+  - 56
+  - 52
+  - 850
+  - 72
+  content:
+    text: Один вопрос собирается из трёх пунктов регламента
+    style: $title
+- elementId: headline
+  elementType: line
+  bounds:
+  - 56
+  - 119
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 1
+    color: $line
+- elementId: footer
+  elementType: text
+  bounds:
+  - 56
+  - 510
+  - 400
+  - 16
+  content:
+    text: PHARMAQC · ДИПЛОМНЫЙ ПРОЕКТ
+    style: $small
+- elementId: page
+  elementType: text
+  bounds:
+  - 862
+  - 510
+  - 42
+  - 16
+  content:
+    text: 09
+    style: $small
+    align:
+    - right
+    - top
+- elementId: question
+  elementType: text
+  bounds:
+  - 56
+  - 145
+  - 848
+  - 62
+  content:
+    text: '«Нарушение температурного режима хранения сырья: класс, первые действия, срок регистрации и расследования?»'
+    fontSize: 19
+    color: $ink
+    lineHeight: 1.3
+- elementId: cl0
+  elementType: text
+  bounds:
+  - 56
+  - 249
+  - 90
+  - 22
+  content:
+    text: '2.1'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t0
+  elementType: text
+  bounds:
+  - 56
+  - 286
+  - 250
+  - 52
+  content:
+    text: Критическое отклонение
+    fontSize: 19
+    color: $ink
+    bold: true
+    lineHeight: 1.2
+- elementId: d0
+  elementType: text
+  bounds:
+  - 56
+  - 350
+  - 250
+  - 52
+  content:
+    text: нарушение температурного режима
+    fontSize: 16
+    color: $muted
+    lineHeight: 1.3
+- elementId: arr0
+  elementType: line
+  bounds:
+  - 310
+  - 304
+  - 32
+  - 1
+  viewBox:
+  - 32
+  - 1
+  points: 0,0 32,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: cl1
+  elementType: text
+  bounds:
+  - 350
+  - 249
+  - 90
+  - 22
+  content:
+    text: 3.1–3.2
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t1
+  elementType: text
+  bounds:
+  - 350
+  - 286
+  - 250
+  - 52
+  content:
+    text: Изолировать и зарегистрировать
+    fontSize: 19
+    color: $ink
+    bold: true
+    lineHeight: 1.2
+- elementId: d1
+  elementType: text
+  bounds:
+  - 350
+  - 350
+  - 250
+  - 52
+  content:
+    text: не позднее 24 часов
+    fontSize: 16
+    color: $muted
+    lineHeight: 1.3
+- elementId: arr1
+  elementType: line
+  bounds:
+  - 604
+  - 304
+  - 32
+  - 1
+  viewBox:
+  - 32
+  - 1
+  points: 0,0 32,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+  arrow:
+  - null
+  - arrow
+- elementId: cl2
+  elementType: text
+  bounds:
+  - 644
+  - 249
+  - 90
+  - 22
+  content:
+    text: '4.4'
+    fontSize: 15
+    color: $orange
+    bold: true
+- elementId: t2
+  elementType: text
+  bounds:
+  - 644
+  - 286
+  - 250
+  - 52
+  content:
+    text: Провести расследование
+    fontSize: 19
+    color: $ink
+    bold: true
+    lineHeight: 1.2
+- elementId: d2
+  elementType: text
+  bounds:
+  - 644
+  - 350
+  - 250
+  - 52
+  content:
+    text: не более 30 календарных дней
+    fontSize: 16
+    color: $muted
+    lineHeight: 1.3
+- elementId: footline
+  elementType: line
+  bounds:
+  - 56
+  - 433
+  - 848
+  - 1
+  viewBox:
+  - 848
+  - 1
+  points: 0,0 848,1
+  curve: sharp
+  border:
+    style: solid
+    width: 2
+    color: $green
+- elementId: source
+  elementType: text
+  bounds:
+  - 56
+  - 451
+  - 848
+  - 30
+  content:
+    text: 'Источник: «Управление отклонениями» · retrieved + answer chunks совпадают'
+    fontSize: 14
+    color: $green
+    bold: true
